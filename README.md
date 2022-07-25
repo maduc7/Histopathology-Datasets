@@ -18,10 +18,14 @@ ACDC-LungHP | Lung | H&E | https://acdc-lunghp.grand-challenge.org/ | Train: 150
 LYON19 | Multiple (Breast, Colon, Protate) | IHC | https://lyon19.grand-challenge.org/ | 441 ROIs | | | | patch |
 DigestPath2019 | | | | | | | | |
 HEROHE | | | | | | | | |
-MoNuSAC 2020 | | | | | | | | |
-PAIP2019 | | | | | | | | |
-PAIP2020 | Liver | H&E | https://paip2019.grand-challenge.org/ | Train: 50m Valid: 10, Test: 40 | images + binary mask | yes | cancer seg | wsi | 20x - Aperio AT2
-The PANDA challenge |  | | | | | | | |
+MoNuSAC 2020 | different (Lung, Prostate, Kidney, Breast) | H&E | https://monusac-2020.grand-challenge.org/, https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9446924 | 31.000 nuclei | images + mask | yes | seg + classi | patch | 40x
+PanNuke | | | | | | | | |
+CoNSeP | | | | | | | | |
+CRCHisto  | | | | | | | | |
+CPM-17
+PAIP2020 | Colon | H&E | https://paip2020.grand-challenge.org/ | Train: 47, Valid: 31, Test: 40 | images + binary mask | yes | cancer seg | wsi | 40x - Aperio AT2
+PAIP2019 | Liver | H&E | https://paip2019.grand-challenge.org/ | Train: 50, Valid: 10, Test: 40 | images + binary mask | yes | cancer seg | wsi | 20x - Aperio AT2
+The PANDA challenge | Prostate | H&E | https://www.kaggle.com/c/prostate-cancer-grade-assessment/data | Train: 10.616, Valid: 393, Internal test: 545, External test: 1071 | images + label | yes | classi | wsi | slide level analysis
 SegPC-2021 | Blood |  | https://segpc-2021.grand-challenge.org/ | | | | | |
 PAIP2021 | Multiple (Colon, Prostate, Pancreas) | H&E | https://paip2021.grand-challenge.org/Rules/ | Train: 150, Valid: 30, Test: 60 | wsi + xml gt | yes/no | semantic seg | wsi | 20x - Aperio AT2
 NuCLS | Breast | H&E | https://nucls.grand-challenge.org/ | 220.000 nuclei from 3.944 roi from 125 patients | roi + bounding bx + classification | yes | nuclear detection + classi + seg | patch | (TCGA)
