@@ -9,11 +9,10 @@ CAMELYON17 | Lymph node | H&E | https://camelyon17.grand-challenge.org/ | Train:
 PatchCamelyon	| Lymph node |	H&E |	https://patchcamelyon.grand-challenge.org/	| 327.680 |	images + binary label	| yes |	classi |	Patch (96x96)
 BreakHis	| Breast |	H&E	| https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/ |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (different magnifications: 40x, 100x, 200x, 400x) |	yes |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x
 GlaS | Colorectal Cancer | H&E | https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/ | 165 | Train: 85 (37 benign, 48 malignant); Test: 80 (37 benign, 43 malignant) | yes | classi + seg | Patch (diff sizes - few hundred px) | 20x - Zeiss MIRAX MIDI
-BACH | Breast | H&E | https://iciar2018-challenge.grand-challenge.org/Dataset/ | 400 | images (4 classes: normal 100, benign: 100, in situ carcinoma: 100, invasive carcinoma: 100) + 20 unlabeled + 10 labeled WSI (10 patients) | yes and no | classi + seg| Patch (classi, 2048x1536) + WSI (seg) | Leica SCN400
+BACH + ICIA2018 | Breast | H&E | https://iciar2018-challenge.grand-challenge.org/Dataset/ | 400 | images (4 classes: normal 100, benign: 100, in situ carcinoma: 100, invasive carcinoma: 100) + 20 unlabeled + 10 labeled WSI (10 patients) | yes and no | classi + seg| Patch (classi, 2048x1536) + WSI (seg) | Leica SCN400
 TUPAC16 | Breast | H&E | https://tupac.grand-challenge.org/ | 500 | images + label | yes (wsi level) | classi | WSI | (from TCGA)
 TUPAC16 - aux| Breast - mitoses| H&E | https://tupac.grand-challenge.org/ | 73 | images + locations | yes | seg | patch | 40x (from TCGA) Leica SCN400
-ICIAR 2018 | | | | | | | | |
-ANHIR | | | | | | | | |
+ANHIR | different | different | https://anhir.grand-challenge.org/ | 50+ sets| image + landmarks |  | registration | patch (15k x 15k to 50k x 50k) | 40x, 20x, 10x, different scanner
 SPIE-AAPM_NCI BreastPathQ | Breast | H&E | https://breastpathq.grand-challenge.org/ | 2579 patch from 96 wsi (64 patients) | images + score | yes | regression | patches | 20x
 ACDC-LungHP | Lung | H&E | https://acdc-lunghp.grand-challenge.org/ | Train: 150, Test: 50 | images + xml | yes | seg + classi | wsi | 
 LYON19 | Multiple (Breast, Colon, Protate) | IHC | https://lyon19.grand-challenge.org/ | 441 ROIs | | | | patch |
