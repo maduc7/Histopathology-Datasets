@@ -2,7 +2,7 @@
 Ressources of histopathology datasets
 
 Dataset name | Organs | Staining | Link | Size | Data | Supervised | Task | WSI/Patch | Other (Magnification, Scanner) | year
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- 
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |---
 TCGA | Multiple | H&E | https://portal.gdc.cancer.gov/ | > 11k |  |  |  | WSI | 
 CAMELYON16 | Lymph node | H&E | https://camelyon16.grand-challenge.org/ | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | yes | classi + seg | WSI | slide level analysis | 2016
 CAMELYON17 | Lymph node | H&E | https://camelyon17.grand-challenge.org/ | Train: 500 (100 patients, 5 slides each); Test: 500 | images + binary masks | yes | classi + seg | WSI | patient level analysis | 2017
@@ -21,10 +21,10 @@ DigestPath2019 - colonoscopy tissue segment | Colon | H&E | https://digestpath20
 HEROHE - ECDP2020 | Breast | H&E | https://ecdp2020.grand-challenge.org/Home/, https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | yes | classi | wsi | 20x - 3D Histech Pannoramic 1000 | 2020
 MoNuSAC 2020 | different (Lung, Prostate, Kidney, Breast) | H&E | https://monusac-2020.grand-challenge.org/, https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9446924 | 31.000 nuclei | images + mask | yes | seg + classi | patch | 40x | 2020
 PanNuke | multiple (19) | H&E | https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke, https://jgamper.github.io/PanNukeDataset/ | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | yes | seg + classi | patch | 40x | 2019
-CoNSeP | | | | | | | | | |
-CRCHisto | | | | | | | | | |
-CPM-17 | | | | | | | | | |
-ARCH | | | https://openaccess.thecvf.com/content/CVPR2021/papers/Gamper_Multiple_Instance_Captioning_Learning_Representations_From_Histopathology_Textbooks_and_Articles_CVPR_2021_paper.pdf, https://warwick.ac.uk/fac/cross_fac/tia/data/arch | | | | | | | 2020
+CoNSeP | | |
+CRCHisto | | 
+CPM-17 | |
+ARCH | | | https://warwick.ac.uk/fac/cross_fac/tia/data/arch | | | | | | | 2020
 HoVer-Net | | | https://warwick.ac.uk/fac/cross_fac/tia/data/hovernet/ | | | | nuclei seg | | | 2019
 PAIP2020 | Colon | H&E | https://paip2020.grand-challenge.org/ | Train: 47, Valid: 31, Test: 40 | images + binary mask | yes | cancer seg | wsi | 40x - Aperio AT2 | 2020
 PAIP2019 | Liver | H&E | https://paip2019.grand-challenge.org/ | Train: 50, Valid: 10, Test: 40 | images + binary mask | yes | cancer seg | wsi | 20x - Aperio AT2 | 2019
@@ -37,7 +37,7 @@ WSSS4LUAD | Lung | H&E | https://wsss4luad.grand-challenge.org/ | 87 (Train: 53,
 Lizard | Colon | H&E | https://warwick.ac.uk/fac/cross_fac/tia/data/lizard/ | 495.179 nuclei | images + instance seg mask | yes | seg | patch | 20x (DigestPath + CRAG + GlaS + PanNuke + CoNSeP + TCGA) | 2021
 CoNIC 2022 | Colon | H&E | https://conic-challenge.grand-challenge.org/ | 4981 patch with 431.913 nuclei of 6 types | image + instance seg mask + classi mask | yes | seg + classi + reg | patch (256x256) | 20x | 2022
 BCNB | Breast | | https://bcnb.grand-challenge.org/ | 1058 (train 0.6, valid 0.2, test 0.2) | images + roi annotated + patient record | | | wsi | | 2021
-ACROBAT 2022 | Breast | IHC + H&E | https://acrobat.grand-challenge.org/ | Train: 750 train; Valid: 100; Test: 300 | images (1 H&E match to 1-4 IHC) + landmarks | | wsi registration | | registration | wsi | | 2022
+ACROBAT 2022 | Breast | IHC + H&E | https://acrobat.grand-challenge.org/ | Train: 750 train; Valid: 100; Test: 300 | images (1 H&E match to 1-4 IHC) + landmarks | | registration | wsi | | 2022
 Cell Segmentation in Multimodality High resolution Microscopy Images |  |  | https://neurips22-cellseg.grand-challenge.org/ | | | | instance segmentation | | | 2022
 TIGER | Breast | H&E | https://tiger.grand-challenge.org/ | | | | | | | 2022
 MIDOG 2021 | Breast | H&E | https://imig.science/midog2021/ | 50 wsi / scanners - 4 scanners | | | | | | 2021
