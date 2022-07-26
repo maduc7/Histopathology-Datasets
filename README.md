@@ -15,11 +15,12 @@ TUPAC16 - aux| Breast - mitoses| H&E | https://tupac.grand-challenge.org/ | 73 |
 ANHIR | different | different | https://anhir.grand-challenge.org/ | 50+ sets| image + landmarks |  | registration | patch (15k x 15k to 50k x 50k) | 40x, 20x, 10x, different scanner
 SPIE-AAPM_NCI BreastPathQ | Breast | H&E | https://breastpathq.grand-challenge.org/ | 2579 patch from 96 wsi (64 patients) | images + score | yes | regression | patches | 20x
 ACDC-LungHP | Lung | H&E | https://acdc-lunghp.grand-challenge.org/ | Train: 150, Test: 50 | images + xml | yes | seg + classi | wsi | 
-LYON19 | Multiple (Breast, Colon, Protate) | IHC | https://lyon19.grand-challenge.org/ | 441 ROIs | | | | patch |
-DigestPath2019 | | | | | | | | |
-HEROHE | | | | | | | | |
+LYON19 | Multiple (Breast, Colon, Protate) | IHC | https://lyon19.grand-challenge.org/ | 441 ROIs |  |  |  | patch | 
+DigestPath2019 - signet ring cell | Gastric, Intestine | H&E | https://digestpath2019.grand-challenge.org/ | Train: 460, Test: 226 | images + cell bounding boxes | partly yes (Train: 77, test: 27) | cell detection | patch (avg 2kx2k) | 40x
+DigestPath2019 - colonoscopy tissue segment | Colon | H&E | https://digestpath2019.grand-challenge.org/ | Train: 660, Test: 212 | images + lesion annotation | seg + classi (benign vs malignant) | partly yes (train: 250, test: 90) | patch (avg 5kx5k) | 20x
+HEROHE - ECDP2020 | Breast | H&E | https://ecdp2020.grand-challenge.org/Home/, https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | yes | classi | wsi | 20x - 3D Histech Pannoramic 1000
 MoNuSAC 2020 | different (Lung, Prostate, Kidney, Breast) | H&E | https://monusac-2020.grand-challenge.org/, https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9446924 | 31.000 nuclei | images + mask | yes | seg + classi | patch | 40x
-PanNuke | | | | | | | | |
+PanNuke | multiple (19) | H&E | https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke, https://jgamper.github.io/PanNukeDataset/ | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | yes | seg + classi | patch | 40x
 CoNSeP | | | | | | | | |
 CRCHisto  | | | | | | | | |
 CPM-17
