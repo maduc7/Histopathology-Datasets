@@ -1,5 +1,7 @@
-# Histopathology Datasets
-Ressources of histopathology datasets
+# <p align=center>`Histopathology Datasets for Machine Learning`</p>
+# Ressources of histopathology datasets
+
+Please find in the table below some link and information about histopathology dataset that are publicly available.
 
 Dataset name | Organs | Staining | Link | Size | Data | Supervised | Task | WSI/Patch | Other (Magnification, Scanner) | year
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |---
@@ -47,6 +49,9 @@ CRC-TP | CRC | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/cr
 CPM-17 |  | H&E | [link data](https://drive.google.com/drive/folders/1sJ4nmkif6j4s2FOGj8j6i_Ye7z9w0TfA) | Train: 32, test: 32 | images + nuclei seg + label | yes | seg + classi | patch (500x500) |  | 
 CPM-15 |  | H&E | [link data](https://drive.google.com/drive/folders/11ko-GcDsPpA9GBHuCtl_jNzWQl6qY_-I) | 15 | images + nuclei seg + label | yes | seg + classi | patch |  | 
 Kumar | different (8) | H&E | [link data](https://drive.google.com/drive/folders/1bI3RyshWej9c4YoRW-_q7lh7FOFDFUrJ), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7872382) | Train: 16 (13.372 nuclei), test same organ (4.130 nuclei): 8, test diff organ (4.121 nuclei): 6 | images + nuclei seg + label | yes | seg + classi | patch | 40x (TCGA) | 2017
-TNBC |  | H&E | [link data](https://drive.google.com/drive/folders/1taB8boGyycjV4X1a2vCIAV9fwMxFSS41) | 33 | images + nuclei seg + label | yes | seg + classi | patch |  | 
+TNBC | Breast | H&E | [link data](https://peterjacknaylor.github.io/data/), [link data](https://drive.google.com/drive/folders/1taB8boGyycjV4X1a2vCIAV9fwMxFSS41), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438559) | 50 images, 4022 cells (11 patients) | images + nuclei seg + label | yes | seg + classi | patch (512x512) | 40x - Philips Ultra Fast Scanner | 2019
 
+If you find any mistakes, you know new datasets that are not listed here, please ask me to add them.
+
+I hope this list will help some of you and make you loose less time searching on the web.
 
