@@ -1,5 +1,19 @@
 # <p align=center>`Histopathology Datasets for Machine Learning`</p>
-# Ressources of histopathology datasets
+
+This is a list of histopathology datasets made public on classification, segmentation, regression and registration tasks.
+
+If you find any mistakes, you know of other datasets that are not listed here or anything else please write an issue.
+
+I hope this list will help some of you.
+
+## Overview
+- [Ressources of histopathology dataset](#Ressources-of-histopathology-dataset)
+- [Classification](#classification)
+- [Segmentation](#segmentation)
+- [Regression](#regression)
+- [Registration](#registration)
+
+# Ressources-of-histopathology-dataset
 
 Please find in the table below some link and information about histopathology dataset that are publicly available.
 
@@ -51,7 +65,7 @@ CPM-15 |  | H&E | [link data](https://drive.google.com/drive/folders/11ko-GcDsPp
 Kumar | different (8) | H&E | [link data](https://drive.google.com/drive/folders/1bI3RyshWej9c4YoRW-_q7lh7FOFDFUrJ), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7872382) | Train: 16 (13.372 nuclei), test same organ (4.130 nuclei): 8, test diff organ (4.121 nuclei): 6 | images + nuclei seg + label | yes | seg + classi | patch | 40x (TCGA) | 2017
 TNBC | Breast | H&E | [link data](https://peterjacknaylor.github.io/data/), [link data](https://drive.google.com/drive/folders/1taB8boGyycjV4X1a2vCIAV9fwMxFSS41), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438559) | 50 images, 4022 cells (11 patients) | images + nuclei seg + label | yes | seg + classi | patch (512x512) | 40x - Philips Ultra Fast Scanner | 2019
 
-If you find any mistakes, you know new datasets that are not listed here, please ask me to add them.
-
-I hope this list will help some of you and make you loose less time searching on the web.
-
+# Classification
+# Segmentation
+# Regression
+# Registration
