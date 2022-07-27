@@ -64,6 +64,7 @@ The PANDA challenge [43]  | Prostate | H&E | [link data](https://www.kaggle.com/
 PanNuke [44a], [44b] | multiple (19) | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke), [link github](https://jgamper.github.io/PanNukeDataset/), [link paper](https://arxiv.org/pdf/2003.10778.pdf), [link paper](https://link.springer.com/chapter/10.1007/978-3-030-23937-4_2) | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | instance seg + classi | patch | 40x | 2019
 PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[link data](https://patchcamelyon.grand-challenge.org/), [link github](https://github.com/basveeling/pcam) [link paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| classi |	Patch (96x96) | 10x | 2018
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [link data](https://segpc-2021.grand-challenge.org/), [link github](https://github.com/dsciitism/SegPC-2021), [link report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
+SICAPv2 [55] | Prostate | H&E | [link data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [link paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
 SPIE-AAPM_NCI BreastPathQ [47] | Breast | H&E | [link data](https://breastpathq.grand-challenge.org/), [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107263/) | 2579 patch from 96 wsi (64 patients) | images + score | regression | patches | 20x | 2019
 TCGA [48] | Multiple | H&E | [link data](https://portal.gdc.cancer.gov/) | > 11k |  |  | WSI | 
 TIGER [49] | Breast | H&E | [link data](https://tiger.grand-challenge.org/) |  | | detection + segmentation + TILs scoring | wsi | | 2022
@@ -196,6 +197,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [53] Han, Chu, et al. "WSSS4LUAD: Grand Challenge on Weakly-supervised Tissue Semantic Segmentation for Lung Adenocarcinoma." arXiv preprint arXiv:2204.06455 (2022).
 
 [54] Borkowski, Andrew A., et al. "Lung and colon cancer histopathological image dataset (lc25000)." arXiv preprint arXiv:1912.12142 (2019).
+
+[55] Silva-Rodríguez, Julio, et al. "Going deeper through the Gleason scoring scale: An automatic end-to-end system for histology prostate grading and cribriform pattern detection." Computer Methods and Programs in Biomedicine 195 (2020): 105637.
 
 # Author
 Marie Duc - PhD Student
