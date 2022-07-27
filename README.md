@@ -92,29 +92,29 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [9] Aksac, Alper, et al. "BreCaHAD: a dataset for breast cancer histopathological annotation and diagnosis." BMC research notes 12.1 (2019): 1-3.
 
-[10]
+[10] Bejnordi, Babak Ehteshami, et al. "Diagnostic assessment of deep learning algorithms for detection of lymph node metastases in women with breast cancer." Jama 318.22 (2017): 2199-2210.
 
-[11]
+[11] Bandi, Peter, et al. "From detection of individual metastases to classification of lymph node status at the patient level: the camelyon17 challenge." IEEE transactions on medical imaging 38.2 (2018): 550-560.
 
-[12]
+[12] Litjens, Geert, et al. "1399 H&E-stained sentinel lymph node sections of breast cancer patients: the CAMELYON dataset." GigaScience 7.6 (2018): giy065.
 
 [13]
 
-[14]
+[14] Graham, Simon, et al. "Conic: Colon nuclei identification and counting challenge 2022." arXiv preprint arXiv:2111.14485 (2021).
 
-[15]
+[15] Graham, Simon, et al. "Hover-net: Simultaneous segmentation and classification of nuclei in multi-tissue histology images." Medical Image Analysis 58 (2019): 101563.
 
-[16]
+[16] Vu, Quoc Dang, et al. "Methods for segmentation and classification of digital microscopy tissue images." Frontiers in bioengineering and biotechnology (2019): 53.
 
-[17]
+[17] Vu, Quoc Dang, et al. "Methods for segmentation and classification of digital microscopy tissue images." Frontiers in bioengineering and biotechnology (2019): 53.
 
-[18]
+[18] Graham, Simon, et al. "MILD-Net: Minimal information loss dilated network for gland instance segmentation in colon histology images." Medical image analysis 52 (2019): 199-211.
 
-[19]
+[19] Sirinukunwattana, Korsuk, et al. "Locality sensitive deep learning for detection and classification of nuclei in routine colon cancer histology images." IEEE transactions on medical imaging 35.5 (2016): 1196-1206.
 
-[20]
+[20] Javed, Sajid, et al. "Cellular community detection for tissue phenotyping in colorectal cancer histology images." Medical image analysis 63 (2020): 101696.
 
-[21]
+[21] Mahbod, Amirreza, et al. "CryoNuSeg: A dataset for nuclei instance segmentation of cryosectioned H&E-stained histological images." Computers in biology and medicine 132 (2021): 104349.
 
 [22]
 
@@ -136,7 +136,7 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [31]
 
-[32]
+[32] Graham, Simon, et al. "Lizard: a large-scale dataset for colonic nuclear instance segmentation and classification." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2021.
 
 [33]
 
