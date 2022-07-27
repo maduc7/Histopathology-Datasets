@@ -71,6 +71,7 @@ TIGER [49] | Breast | H&E | [link data](https://tiger.grand-challenge.org/) |  |
 TNBC [50] | Breast | H&E | [link data](https://peterjacknaylor.github.io/data/), [link data](https://drive.google.com/drive/folders/1taB8boGyycjV4X1a2vCIAV9fwMxFSS41), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438559) | 50 images, 4022 cells (11 patients) | images + nuclei seg + label | seg + classi | patch (512x512) | 40x - Philips Ultra Fast Scanner (Curie Inst.) | 2019
 TUPAC16 [51] | Breast | H&E | [link data](https://tupac.grand-challenge.org/), [link paper](https://arxiv.org/ftp/arxiv/papers/1807/1807.08284.pdf) | 500 | images + label | classi (wsi level) | WSI | 40x (from TCGA) | 2019
 TUPAC16 - aux [52] | Breast - mitoses| H&E | [link data](https://tupac.grand-challenge.org/) | 73 | images + locations | seg | patch | 40x (from TCGA) Leica SCN400 | 2019
+UniToPatho [56] | Colon | H&E | [link data](https://github.com/EIDOSlab/UNITOPATHO), [link paper](https://ieeexplore.ieee.org/document/9506198) | 9.536 from 292 wsi | images + label (6 classes) | classi | patch | 20x - Hamamatsu Nanozoomer S210 | 2021
 WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/), [link paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
 
 # References
@@ -199,6 +200,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [54] Borkowski, Andrew A., et al. "Lung and colon cancer histopathological image dataset (lc25000)." arXiv preprint arXiv:1912.12142 (2019).
 
 [55] Silva-Rodríguez, Julio, et al. "Going deeper through the Gleason scoring scale: An automatic end-to-end system for histology prostate grading and cribriform pattern detection." Computer Methods and Programs in Biomedicine 195 (2020): 105637.
+
+[56] Barbano, Carlo Alberto, et al. "UniToPatho, a labeled histopathological dataset for colorectal polyps classification and adenoma dysplasia grading." 2021 IEEE International Conference on Image Processing (ICIP). IEEE, 2021.
 
 # Author
 Marie Duc - PhD Student
