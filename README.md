@@ -22,16 +22,16 @@ Please find in the table below some link and information about histopathology da
 
 Dataset name | Organs | Staining | Link | Size | Data | Supervised | Task | WSI/Patch | Other (Magnification, Scanner) | year
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |---
-ACDC-LungHP | Lung | H&E | [link data](https://acdc-lunghp.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/9265237) | Train: 150, Test: 50 | images + xml | yes | seg + classi | wsi | | 2019
+ACDC-LungHP [1a](1a), [1b] | Lung | H&E | [link data](https://acdc-lunghp.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/9265237) | Train: 150, Test: 50 | images + xml | yes | seg + classi | wsi | | 2019
 ACROBAT 2022 | Breast | IHC + H&E | [link data](https://acrobat.grand-challenge.org/), [link paper](https://openreview.net/pdf?id=5TTocO2VI3r) | Train: 750 train; Valid: 100; Test: 300 | images (1 H&E match to 1-4 IHC) + landmarks | | registration | wsi | 40x - Hamamatsu | 2022
-ADP | multiple | multiple (most H&E) | [link data](https://www.dsp.utoronto.ca/projects/ADP/ADP_Database/index.php#main_title), [link github](https://github.com/mahdihosseini/ADP), [link paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Hosseini_Atlas_of_Digital_Pathology_A_Generalized_Hierarchical_Histological_Tissue_Type-Annotated_CVPR_2019_paper.pdf) | Train: 14.134, Valid: 1767, Test: 1767 (100 wsi) | images + 57 hierarchical HTTs (histological tissue type) |  | multi-label (3) classification (hierarchy) | patch (1088x1088) | 40x - Huron TissueScope LE1.2 WSI | 2019
-ANHIR | different (Lung, Kidney, Colon, Gastric, Breast)| different | [link data](https://anhir.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/9058666) | 50+ sets| image + landmarks |  | registration | patch (15k x 15k to 50k x 50k) | 40x, 20x, 10x, different scanner | 2019
-ARCH | different | different | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/arch), [link paper](https://openaccess.thecvf.com/content/CVPR2021/html/Gamper_Multiple_Instance_Captioning_Learning_Representations_From_Histopathology_Textbooks_and_Articles_CVPR_2021_paper.html) | 4270 | images + caption |  | learn representation from text + image | patch | multiple | 2020
-BACH - ICIA2018 | Breast | H&E | [link data](https://iciar2018-challenge.grand-challenge.org/Dataset/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841518307941) | 400 | images (4 classes: normal 100, benign: 100, in situ carcinoma: 100, invasive carcinoma: 100) + 20 unlabeled + 10 labeled WSI (10 patients) | yes and no | classi + seg| Patch (classi, 2048x1536) + WSI (seg) | Leica SCN400 | 2018
-BCNB | Breast | | [link data](https://bcnb.grand-challenge.org/), [link paper](https://www.frontiersin.org/articles/10.3389/fonc.2021.759007/full) | 1058 (train 0.6, valid 0.2, test 0.2) | images + roi annotated + patient record | | | wsi | | 2021
-BCSS | Breast | H&E | [link data](https://bcsegmentation.grand-challenge.org/), [link paper](https://academic.oup.com/bioinformatics/article/35/18/3461/5307750) | 151 wsi, 20.000 patch| patch + segmentation mask | yes | semantic seg | patch | (TCGA) | 2019
-BreakHis	| Breast |	H&E	| [link data](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/), [link paper](https://www.inf.ufpr.br/lesoliveira/download/TBME-00608-2015-R2-preprint.pdf) |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (different magnifications: 40x, 100x, 200x, 400x) |	yes |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x | 2016
-BreCaHAD | Breast | H&E | [link data](https://figshare.com/articles/dataset/BreCaHAD_A_Dataset_for_Breast_Cancer_Histopathological_Annotation_and_Diagnosis/7379186) [link paper](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-019-4121-7) | 162 | images + centroid with label | yes | classi (6: mitosis, apoptosis, tumor nuclei, non-tumor nuclei, tubule, non-tubule) | patch (1360x1024) | 40x - Zeiss | 2019
+ADP [2] | multiple | multiple (most H&E) | [link data](https://www.dsp.utoronto.ca/projects/ADP/), [link github](https://github.com/mahdihosseini/ADP), [link paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Hosseini_Atlas_of_Digital_Pathology_A_Generalized_Hierarchical_Histological_Tissue_Type-Annotated_CVPR_2019_paper.pdf) | Train: 14.134, Valid: 1767, Test: 1767 (100 wsi) | images + 57 hierarchical HTTs (histological tissue type) |  | multi-label (3) classification (hierarchy) | patch (1088x1088) | 40x - Huron TissueScope LE1.2 WSI | 2019
+ANHIR [3] | different (Lung, Kidney, Colon, Gastric, Breast)| different | [link data](https://anhir.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/9058666) | 50+ sets| image + landmarks |  | registration | patch (15k x 15k to 50k x 50k) | 40x, 20x, 10x, different scanner | 2019
+ARCH [4] | different | different | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/arch), [link paper](https://openaccess.thecvf.com/content/CVPR2021/html/Gamper_Multiple_Instance_Captioning_Learning_Representations_From_Histopathology_Textbooks_and_Articles_CVPR_2021_paper.html) | 4270 | images + caption |  | learn representation from text + image | patch | multiple | 2020
+BACH - ICIA2018 [5] | Breast | H&E | [link data](https://iciar2018-challenge.grand-challenge.org/Dataset/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841518307941) | 400 | images (4 classes: normal 100, benign: 100, in situ carcinoma: 100, invasive carcinoma: 100) + 20 unlabeled + 10 labeled WSI (10 patients) | yes and no | classi + seg| Patch (classi, 2048x1536) + WSI (seg) | Leica SCN400 | 2018
+BCNB [6] | Breast | | [link data](https://bcnb.grand-challenge.org/), [link paper](https://www.frontiersin.org/articles/10.3389/fonc.2021.759007/full) | 1058 (train 0.6, valid 0.2, test 0.2) | images + roi annotated + patient record | | | wsi | | 2021
+BCSS [7] | Breast | H&E | [link data](https://bcsegmentation.grand-challenge.org/), [link paper](https://academic.oup.com/bioinformatics/article/35/18/3461/5307750) | 151 wsi, 20.000 patch| patch + segmentation mask | yes | semantic seg | patch | (TCGA) | 2019
+BreakHis [8] | Breast |	H&E	| [link data](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/), [link paper](https://www.inf.ufpr.br/lesoliveira/download/TBME-00608-2015-R2-preprint.pdf) |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (different magnifications: 40x, 100x, 200x, 400x) |	yes |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x | 2016
+BreCaHAD [9] | Breast | H&E | [link data](https://figshare.com/articles/dataset/BreCaHAD_A_Dataset_for_Breast_Cancer_Histopathological_Annotation_and_Diagnosis/7379186) [link paper](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-019-4121-7) | 162 | images + centroid with label | yes | classi (6: mitosis, apoptosis, tumor nuclei, non-tumor nuclei, tubule, non-tubule) | patch (1360x1024) | 40x - Zeiss | 2019
 CAMELYON16 | Lymph node | H&E | [link data](https://camelyon16.grand-challenge.org/), [link paper](https://jamanetwork.com/journals/jama/article-abstract/2665774) | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | yes | classi + seg | WSI | slide level analysis | 2016
 CAMELYON17 | Lymph node | H&E | [link data](https://camelyon17.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/8447230) | Train: 500 (100 patients, 5 slides each); Test: 500 | images + binary masks | yes | classi + seg | WSI | patient level analysis | 2017
 CAMELYON | Breast (Lymph node) | H&E | [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/) | 1399 wsi | | | | wsi | | 2017
@@ -41,7 +41,7 @@ CoNSeP - HoVer-Net | Colorectal adenocarcinoma | H&E | [link data](https://warwi
 CPM-15 | (2) | H&E | [link data](https://drive.google.com/drive/folders/11ko-GcDsPpA9GBHuCtl_jNzWQl6qY_-I) | 15 (2905 nuclei) | images + nuclei seg + label | yes | seg + classi | patch (400x400, 600x1000) | 20x, 40x (TCGA) | 
 CPM-17 | (4) | H&E | [link data](https://drive.google.com/drive/folders/1sJ4nmkif6j4s2FOGj8j6i_Ye7z9w0TfA), [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6454006/) | Train: 32, test: 32 (7570 nuclei) | images + nuclei seg + label | yes | seg + classi | patch (500x500 to 600x600) | 20x, 40x (TCGA) | 2019
 CRAG - MILD-Net | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/mildnet/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841518306030?via%3Dihub) | Train: 173, Valid: 40 | image + segmentation | yes | instance seg | patch (around 1500x1500) | 20x | 2019
-CRCHisto | | --- | --- |--- |--- |--- |--- |--- |--- | 2016
+CRCHisto | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/crchistolabelednucleihe/), [link paper](https://ieeexplore.ieee.org/document/7399414) | 100 images, 29.756 nuclei (10 wsi, 9 patients) | images + point nuclei class label | yes (22.444 nuclei) | seg + classi (epithelial, inflammatory, fibroblast, miscellaneous) | patch (500x500) | 20x - Omnyx VL120 (UHCW) | 2016
 CRC-TP | CRC | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/crc-tp), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S136184152030061X?via%3Dihub) | 280k patches (from 20 wsi) | images + tissue phenotypes | yes | classi | patch |  | 2020
 CryoNuSeg | multiple (10: adrenal gland, larynx, lymph nodes, mediastinum, pancreas, pleura, skin, testes, thymus, and thyroid gland) | H&E | [link data](https://www.kaggle.com/datasets/ipateam/segmentation-of-nuclei-in-cryosectioned-he-images), [link github](https://github.com/masih4/CryoNuSeg), [link paper](https://www.sciencedirect.com/science/article/pii/S0010482521001438) | 8000 nuclei from 30 patches (from 30 wsi) | images + segmentation masks + binary labels | yes | nuclei segmentation | patch (512x512) | 40x (from TCGA) | 2021
 DigestPath2019 - signet ring cell | Gastric, Intestine | H&E | [link data](https://digestpath2019.grand-challenge.org/), [link paper](https://arxiv.org/pdf/1907.03954.pdf) | Train: 460, Test: 226 | images + cell bounding boxes | partly yes (Train: 77, test: 27) | cell detection | patch (avg 2kx2k) | 40x | 2019
@@ -77,15 +77,27 @@ TUPAC16 | Breast | H&E | [link data](https://tupac.grand-challenge.org/), [link 
 TUPAC16 - aux| Breast - mitoses| H&E | [link data](https://tupac.grand-challenge.org/) | 73 | images + locations | yes | seg | patch | 40x (from TCGA) Leica SCN400 | 2019
 WSSS4LUAD | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/), [link paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | yes | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
 
-# Classification
+# References
+[1a] Li, Zhang, et al. "Computer-aided diagnosis of lung carcinoma using deep learning-a pilot study." arXiv preprint arXiv:1803.05471 (2018).
 
-# Segmentation
+[1b] Li, Zhang, et al. "Deep learning methods for lung cancer segmentation in whole-slide histopathology images—the acdc@ lunghp challenge 2019." IEEE Journal of Biomedical and Health Informatics 25.2 (2020): 429-440.
 
-# Regression
+[2] Hosseini, Mahdi S., et al. "Atlas of digital pathology: A generalized hierarchical histological tissue type-annotated database for deep learning." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2019.
 
-# Registration
+[3] Borovec, Jiří, et al. "ANHIR: automatic non-rigid histological image registration challenge." IEEE transactions on medical imaging 39.10 (2020): 3042-3052.
 
-# Organs
+[4] Gamper, Jevgenij, and Nasir Rajpoot. "Multiple instance captioning: Learning representations from histopathology textbooks and articles." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2021.
+
+[5] Aresta, Guilherme, et al. "Bach: Grand challenge on breast cancer histology images." Medical image analysis 56 (2019): 122-139.
+
+[6] Xu, Feng, et al. "Predicting axillary lymph node metastasis in early breast cancer using deep learning on primary tumor biopsy slides." Frontiers in oncology 11 (2021): 759007.
+
+[7] Amgad, Mohamed, et al. "Structured crowdsourcing enables convolutional segmentation of histology images." Bioinformatics 35.18 (2019): 3461-3467.
+
+[8] Spanhol, Fabio A., et al. "A dataset for breast cancer histopathological image classification." Ieee transactions on biomedical engineering 63.7 (2015): 1455-1462.
+
+[9] Aksac, Alper, et al. "BreCaHAD: a dataset for breast cancer histopathological annotation and diagnosis." BMC research notes 12.1 (2019): 1-3.
+
 
 
 # Author
