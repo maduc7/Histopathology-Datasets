@@ -48,6 +48,7 @@ Janowczyk et al. [28] | Breast |  H&E | [link data](http://www.andrewjanowczyk.c
 Kather et al. [29] | Colon | H&E | [link data](https://zenodo.org/record/1214456#.Yt_SxN_RZhE), [link github](https://github.com/jnkather/deep-stroma-histology/tree/v0.2), [link paper](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002730) | Train: 100k (86 wsi), Valid: 7180 (25 wsi) | image + label (9 tissue type) | classi | patch (224x224) |  | 2018
 Kather et al. [30] | Colon | H&E | [link data](https://zenodo.org/record/2530835#.Yt_ZdN_RZhE), [link data](https://zenodo.org/record/2530789#.Yt_Zc9_RZhE), [link data](https://zenodo.org/record/2532612#.Yt_Zdd_RZhE), [link github](https://github.com/jnkather/MSIfromHE), [link paper](https://www.nature.com/articles/s41591-019-0462-y#data-availability) |   |  | seg (tumor detection) + classi (MSI detection) |   |  | 2019
 Kumar [31] | multiple (8) | H&E | [link data](https://drive.google.com/drive/folders/1bI3RyshWej9c4YoRW-_q7lh7FOFDFUrJ), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7872382) | Train: 16 (13.372 nuclei), test same organ (4.130 nuclei): 8, test diff organ (4.121 nuclei): 6 | images + nuclei seg + label | seg + classi | patch (1000x1000) | 40x (TCGA) | 2017
+LC25000 [54] | multiple (lung, colon) | H&E | [link dataset](https://github.com/tampapath/lung_colon_image_set), [link paper](https://arxiv.org/ftp/arxiv/papers/1912/1912.12142.pdf) | 25.000 (5 classes) | images + label | patch (768x768) | classi | 60x | 2019
 Lizard [32] | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/lizard/), [link paper](https://arxiv.org/pdf/2108.11195.pdf) | 495.179 nuclei | images + instance seg mask | seg | patch | 20x (DigestPath + CRAG + GlaS + PanNuke + CoNSeP + TCGA) | 2021
 LYON19 [33] | Multiple (Breast, Colon, Protate) | IHC | [link data](https://lyon19.grand-challenge.org/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841519300829) | Test: 441 ROIs - 171.166 cells | images + corrdinates of cell | cell detection | patch | Pannoramic 250Flash II scanner | 2019
 MIDOG 2021 [34] | Breast | H&E | [link data](https://imig.science/midog2021/the-dataset/), [link paper](https://arxiv.org/pdf/2204.03742.pdf) | 200 wsi: 50 wsi / scanners - 4 scanners | images + roi | detection of mitotic figues | wsi | | 2021
@@ -193,6 +194,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [52] Veta, Mitko, et al. "Predicting breast tumor proliferation from whole-slide images: the TUPAC16 challenge." Medical image analysis 54 (2019): 111-121.
 
 [53] Han, Chu, et al. "WSSS4LUAD: Grand Challenge on Weakly-supervised Tissue Semantic Segmentation for Lung Adenocarcinoma." arXiv preprint arXiv:2204.06455 (2022).
+
+[54] Borkowski, Andrew A., et al. "Lung and colon cancer histopathological image dataset (lc25000)." arXiv preprint arXiv:1912.12142 (2019).
 
 # Author
 Marie Duc - PhD Student
