@@ -60,8 +60,8 @@ PAIP2019 [40] | Liver | H&E | [link data](https://paip2019.grand-challenge.org/)
 PAIP2020 [41] | Colon | H&E | [link data](https://paip2020.grand-challenge.org/), [link github](https://github.com/wisepaip/paip2020) | Train: 47, Valid: 31, Test: 40 | images + binary mask | yes | cancer seg | wsi | 40x - Aperio AT2 | 2020
 PAIP2021 [42] | Multiple (Colon, Prostate, Pancreas) | H&E | [link data](https://paip2021.grand-challenge.org/Rules/), [link paper](https://arxiv.org/ftp/arxiv/papers/2110/2110.12283.pdf) | Train: 150, Valid: 30, Test: 60 | wsi + xml gt | yes/no | semantic seg | wsi | 20x - Aperio AT2 | 2021
 The PANDA challenge [43]  | Prostate | H&E | [link data](https://www.kaggle.com/c/prostate-cancer-grade-assessment/data), [link paper](https://www.nature.com/articles/s41591-021-01620-2) | Train: 10.616, Valid: 393, Internal test: 545, External test: 1071 | images + label | yes | classi | wsi | slide level analysis | 2020
-PanNuke [44] | multiple (19) | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke), [link github](https://jgamper.github.io/PanNukeDataset/), [link paper](https://arxiv.org/pdf/2003.10778.pdf), [link paper](https://link.springer.com/chapter/10.1007/978-3-030-23937-4_2) | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | yes | instance seg + classi | patch | 40x | 2019
-PatchCamelyon [45]	| Lymph node |	H&E |	[link data](https://patchcamelyon.grand-challenge.org/), [link github](https://github.com/basveeling/pcam) [link paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| yes |	classi |	Patch (96x96) | 10x | 2018
+PanNuke [44a], [44b] | multiple (19) | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke), [link github](https://jgamper.github.io/PanNukeDataset/), [link paper](https://arxiv.org/pdf/2003.10778.pdf), [link paper](https://link.springer.com/chapter/10.1007/978-3-030-23937-4_2) | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | yes | instance seg + classi | patch | 40x | 2019
+PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[link data](https://patchcamelyon.grand-challenge.org/), [link github](https://github.com/basveeling/pcam) [link paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| yes |	classi |	Patch (96x96) | 10x | 2018
 SegPC-2021 [46] | Blood |  | [link data](https://segpc-2021.grand-challenge.org/), [link github](https://github.com/dsciitism/SegPC-2021), [link report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | | | | | | | 2021
 SPIE-AAPM_NCI BreastPathQ [47] | Breast | H&E | [link data](https://breastpathq.grand-challenge.org/), [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107263/) | 2579 patch from 96 wsi (64 patients) | images + score | yes | regression | patches | 20x | 2019
 TCGA [48] | Multiple | H&E | [link data](https://portal.gdc.cancer.gov/) | > 11k |  |  |  | WSI | 
@@ -152,37 +152,41 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [37b] Kumar, Neeraj, et al. "A dataset and a technique for generalized nuclear segmentation for computational pathology." IEEE transactions on medical imaging 36.7 (2017): 1550-1560.
 
-[38]
+[38] Naylor, Peter, et al. "Segmentation of nuclei in histopathology images by deep regression of the distance map." IEEE transactions on medical imaging 38.2 (2018): 448-459.
 
-[39]
+[39] Amgad, Mohamed, et al. "Nucls: A scalable crowdsourcing, deep learning approach and dataset for nucleus classification, localization and segmentation." arXiv preprint arXiv:2102.09099 (2021).
 
-[40]
+[40] Kim, Yoo Jung, et al. "PAIP 2019: Liver cancer segmentation challenge." Medical Image Analysis 67 (2021): 101854.
 
-[41]
+[41] 
 
-[42]
+[42] Nateghi, Ramin, and Fattaneh Pourakpour. "Perineural Invasion Detection in Multiple Organ Cancer Based on Deep Convolutional Neural Network." arXiv preprint arXiv:2110.12283 (2021).
 
-[43]
+[43] Bulten, Wouter, et al. "Artificial intelligence for diagnosis and Gleason grading of prostate cancer: the PANDA challenge." Nature medicine 28.1 (2022): 154-163.
 
-[44]
+[44a] Gamper, Jevgenij, et al. "Pannuke: an open pan-cancer histology dataset for nuclei instance segmentation and classification." European congress on digital pathology. Springer, Cham, 2019.
 
-[45]
+[44b] Gamper, Jevgenij, et al. "Pannuke dataset extension, insights and baselines." arXiv preprint arXiv:2003.10778 (2020).
 
-[46]
+[45a] Veeling, Bastiaan S., et al. "Rotation equivariant CNNs for digital pathology." International Conference on Medical image computing and computer-assisted intervention. Springer, Cham, 2018.
 
-[47]
+[45b] Bejnordi, Babak Ehteshami, et al. "Diagnostic assessment of deep learning algorithms for detection of lymph node metastases in women with breast cancer." Jama 318.22 (2017): 2199-2210.
+
+[46] Gupta, Anubha, et al. "Segpc-2021: Segmentation of multiple myeloma plasma cells in microscopic images." IEEE Dataport 1.1 (2021): 1.
+
+[47] Petrick, Nicholas A., et al. "SPIE-AAPM-NCI BreastPathQ Challenge: an image analysis challenge for quantitative tumor cellularity assessment in breast cancer histology images following neoadjuvant treatment." Journal of Medical Imaging 8.3 (2021): 034501.
 
 [48]
 
 [49]
 
-[50]
+[50] P. Naylor, M. Laé, F. Reyal and T. Walter, "Segmentation of Nuclei in Histopathology Images by Deep Regression of the Distance Map," in IEEE Transactions on Medical Imaging, vol. 38, no. 2, pp. 448-459, Feb. 2019, doi: 10.1109/TMI.2018.2865709
 
-[51]
+[51] Veta, Mitko, et al. "Predicting breast tumor proliferation from whole-slide images: the TUPAC16 challenge." Medical image analysis 54 (2019): 111-121.
 
-[52]
+[52] Veta, Mitko, et al. "Predicting breast tumor proliferation from whole-slide images: the TUPAC16 challenge." Medical image analysis 54 (2019): 111-121.
 
-[53]
+[53] Han, Chu, et al. "WSSS4LUAD: Grand Challenge on Weakly-supervised Tissue Semantic Segmentation for Lung Adenocarcinoma." arXiv preprint arXiv:2204.06455 (2022).
 
 # Author
 Marie Duc - PhD Student
