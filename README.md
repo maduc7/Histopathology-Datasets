@@ -39,6 +39,7 @@ CRAG - MILD-Net [18] | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross
 CRCHisto [19] | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/crchistolabelednucleihe/), [link paper](https://ieeexplore.ieee.org/document/7399414) | 100 images, 29.756 nuclei (10 wsi, 9 patients) | images + point nuclei class label | seg + classi (epithelial, inflammatory, fibroblast, miscellaneous) | patch (500x500) | 20x - Omnyx VL120 (UHCW) | 2016
 CRC-TP [20] | CRC | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/crc-tp), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S136184152030061X?via%3Dihub) | 280k patches (from 20 wsi) | images + tissue phenotypes | classi | patch |  | 2020
 CryoNuSeg [21] | multiple (10: adrenal gland, larynx, lymph nodes, mediastinum, pancreas, pleura, skin, testes, thymus, and thyroid gland) | H&E | [link data](https://www.kaggle.com/datasets/ipateam/segmentation-of-nuclei-in-cryosectioned-he-images), [link github](https://github.com/masih4/CryoNuSeg), [link paper](https://www.sciencedirect.com/science/article/pii/S0010482521001438) | 8000 nuclei from 30 patches (from 30 wsi) | images + segmentation masks + binary labels | nuclei segmentation | patch (512x512) | 40x (from TCGA) | 2021
+DiagSeg [58] | Prostate | H&E | [link data](https://github.com/michalkoziarski/DiagSet), [link paper](https://arxiv.org/abs/2105.04014) | >2.6M patches (from 430 scans) 430 fully annotated scans, 4675 scans with binary diagnosis, and 46 scans with diagnosis given independently by a group of 9 histopathologists |  | classi (256×256) | patch | 5x, 10x, 20x, 40x - Hamamatsu C12000-22 | 2021
 DigestPath2019 - signet ring cell [22] | multiple (Gastric, Intestine) | H&E | [link data](https://digestpath2019.grand-challenge.org/), [link paper](https://arxiv.org/pdf/1907.03954.pdf) | Train: 460, Test: 226 | images + cell bounding boxes | cell detection | patch (avg 2kx2k) | 40x | 2019
 DigestPath2019 - colonoscopy tissue segment [23] | Colon | H&E | [link data](https://digestpath2019.grand-challenge.org/), [link paper](https://arxiv.org/pdf/1907.03954.pdf) | Train: 660, Test: 212 | images + lesion annotation | seg + classi (benign vs malignant) | patch (avg 5kx5k) | 20x | 2019
 GlaS [24] | Colorectal Cancer | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/), [link paper](https://arxiv.org/pdf/1603.00275v2.pdf) | 165 | Train: 85 (37 benign, 48 malignant); Test: 80 (37 benign, 43 malignant) | classi + seg | Patch (diff sizes - few hundred px) | 20x - Zeiss MIRAX MIDI | 2015
@@ -205,6 +206,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [56] Barbano, Carlo Alberto, et al. "UniToPatho, a labeled histopathological dataset for colorectal polyps classification and adenoma dysplasia grading." 2021 IEEE International Conference on Image Processing (ICIP). IEEE, 2021.
 
 [57] Zhu, Chuang, et al. "Hard Sample Aware Noise Robust Learning for Histopathology Image Classification." IEEE Transactions on Medical Imaging 41.4 (2021): 881-894.
+
+[58] Koziarski, Michał, et al. "DiagSet: a dataset for prostate cancer histopathological image classification." arXiv preprint arXiv:2105.04014 (2021).
 
 # Author
 Marie Duc - PhD Student
