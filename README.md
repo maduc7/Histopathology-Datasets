@@ -30,6 +30,7 @@ CAMELYON16 [10] | Lymph node | H&E | [link data](https://camelyon16.grand-challe
 CAMELYON17 [11] | Lymph node | H&E | [link data](https://camelyon17.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/8447230) | Train: 500 (100 patients, 5 slides each); Test: 500 | images + binary masks | classi + seg | WSI | patient level analysis | 2017
 CAMELYON [12] | Breast (Lymph node) | H&E | [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/) | 1399 wsi | | | wsi | | 2017
 Cellseg [13] | multiple | multiple | [link data](https://neurips22-cellseg.grand-challenge.org/), [link github](https://github.com/JunMa11/NeurIPS-CellSeg) | | images + limited labeled patches | instance (cell) segmentation | | wsi | 2022
+Chaoyang [57] | Colon | H&E | [link data](https://bupt-ai-cz.github.io/HSA-NRL/), [link github](https://github.com/bupt-ai-cz/HSA-NRL), [link paper](https://ieeexplore.ieee.org/abstract/document/9600806) | Train: 111 normal, 842 serrated, 1404 adenocarcinoma, 664 adenoma, Test: 705 normal, 321 serrated, 840 adenocarcinoma, 273 adenoma samples | images + label | classi | patch (512×512) |  | 2021
 CoNIC 2022 [14] | Colon | H&E | [link data](https://conic-challenge.grand-challenge.org/), [link github](https://github.com/TissueImageAnalytics/CoNIC), [link paper](https://arxiv.org/pdf/2111.14485.pdf) | 4981 patch with 431.913 nuclei of 6 types | image + instance seg mask + classi mask | seg + classi + reg | patch (256x256) | 20x | 2022
 CoNSeP - HoVer-Net [15] | Colorectal adenocarcinoma | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/hovernet/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841519301045?via%3Dihub) | Train: 27 images, Test: 14 images, 24.319 nuclei | images + nuclei (location + class) | instance seg + classi (7: other, inflammatory, healthy epithelial, dysplastic/malignant epithelial, figroblast, muscle, endothelial) | patch (1000x1000) | 40x (UHCW) | 2019
 CPM-15 [16] | multiple (2) | H&E | [link data](https://drive.google.com/drive/folders/11ko-GcDsPpA9GBHuCtl_jNzWQl6qY_-I) | 15 (2905 nuclei) | images + nuclei seg + label | seg + classi | patch (400x400, 600x1000) | 20x, 40x (TCGA) | 
@@ -202,6 +203,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [55] Silva-Rodríguez, Julio, et al. "Going deeper through the Gleason scoring scale: An automatic end-to-end system for histology prostate grading and cribriform pattern detection." Computer Methods and Programs in Biomedicine 195 (2020): 105637.
 
 [56] Barbano, Carlo Alberto, et al. "UniToPatho, a labeled histopathological dataset for colorectal polyps classification and adenoma dysplasia grading." 2021 IEEE International Conference on Image Processing (ICIP). IEEE, 2021.
+
+[57] Zhu, Chuang, et al. "Hard Sample Aware Noise Robust Learning for Histopathology Image Classification." IEEE Transactions on Medical Imaging 41.4 (2021): 881-894.
 
 # Author
 Marie Duc - PhD Student
