@@ -2,7 +2,7 @@
 
 This is a list of histopathology datasets made public for classification, segmentation, regression and/or registration tasks.
 
-If you find any mistakes, you know of other datasets that are not listed here or anything else, please write an issue.
+I am happy if you want to help me update and/or improve this document. I think it helps to have an overview of all the datasets available in the field.
 
 I hope this list will help some of you.
 
@@ -213,3 +213,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 Marie Duc - PhD Student
 
 email: marie.duc@med.uni-tuebingen.de
+
+https://paperswithcode.com/dataset/crc
+https://paperswithcode.com/dataset/colorectal-adenoma
+https://paperswithcode.com/dataset/bracs
+https://paperswithcode.com/dataset/cocahis
