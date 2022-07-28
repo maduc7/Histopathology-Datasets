@@ -24,6 +24,7 @@ ARCH [4] | multiple | multiple | [link data](https://warwick.ac.uk/fac/cross_fac
 BACH - ICIA2018 [5] | Breast | H&E | [link data](https://iciar2018-challenge.grand-challenge.org/Dataset/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841518307941) | 400 | images (4 classes: normal 100, benign: 100, in situ carcinoma: 100, invasive carcinoma: 100) + 20 unlabeled + 10 labeled WSI (10 patients) | classi + seg| Patch (classi, 2048x1536) + WSI (seg) | Leica SCN400 | 2018
 BCNB [6] | Breast | H&E | [link data](https://bcnb.grand-challenge.org/), [link paper](https://www.frontiersin.org/articles/10.3389/fonc.2021.759007/full) | 1058 (train 0.6, valid 0.2, test 0.2) | images + roi annotated + patient record | binary or multiple classi | wsi |  | 2021
 BCSS [7] | Breast | H&E | [link data](https://bcsegmentation.grand-challenge.org/), [link paper](https://academic.oup.com/bioinformatics/article/35/18/3461/5307750) | 151 wsi, 20.000 patch| patch + segmentation mask | semantic seg | patch | (TCGA) | 2019
+BRACS [62] | Breast | H&E | [link data](https://www.bracs.icar.cnr.it/details/), [link paper](https://arxiv.org/pdf/2111.04740.pdf) | 547 wsi, 4539 ROIs, 189 Patients | images + label (6 subtypes tumor + normal) | classi (7) | wsi + patch | 40x - Aperio AT2 | 2021
 BreakHis [8] | Breast |	H&E	| [link data](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/), [link paper](https://www.inf.ufpr.br/lesoliveira/download/TBME-00608-2015-R2-preprint.pdf) |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (multiple magnifications: 40x, 100x, 200x, 400x) |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x | 2016
 BreCaHAD [9] | Breast | H&E | [link data](https://figshare.com/articles/dataset/BreCaHAD_A_Dataset_for_Breast_Cancer_Histopathological_Annotation_and_Diagnosis/7379186) [link paper](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-019-4121-7) | 162 | images + centroid with label | classi (6: mitosis, apoptosis, tumor nuclei, non-tumor nuclei, tubule, non-tubule) | patch (1360x1024) | 40x - Zeiss | 2019
 CAMELYON16 [10] | Lymph node | H&E | [link data](https://camelyon16.grand-challenge.org/), [link paper](https://jamanetwork.com/journals/jama/article-abstract/2665774) | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | classi + seg | WSI | slide level analysis | 2016
@@ -218,6 +219,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [61] Sitnik, Dario, et al. "A dataset and a methodology for intraoperative computer-aided diagnosis of a metastatic colon cancer in a liver." Biomedical Signal Processing and Control 66 (2021): 102402.
 
+[62] Brancati, Nadia, et al. "Bracs: A dataset for breast carcinoma subtyping in h&e histology images." arXiv preprint arXiv:2111.04740 (2021).
+
 # Author
 Marie Duc - PhD Student
 
@@ -225,5 +228,3 @@ email: marie.duc@med.uni-tuebingen.de
 
 https://paperswithcode.com/dataset/crc
 https://paperswithcode.com/dataset/colorectal-adenoma
-https://paperswithcode.com/dataset/bracs
-https://paperswithcode.com/dataset/cocahis
