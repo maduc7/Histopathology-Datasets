@@ -31,6 +31,7 @@ CAMELYON17 [11] | Lymph node | H&E | [link data](https://camelyon17.grand-challe
 CAMELYON [12] | Breast (Lymph node) | H&E | [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/) | 1399 wsi | | | wsi | | 2017
 Cellseg [13] | multiple | multiple | [link data](https://neurips22-cellseg.grand-challenge.org/), [link github](https://github.com/JunMa11/NeurIPS-CellSeg) | | images + limited labeled patches | instance (cell) segmentation | | wsi | 2022
 Chaoyang [57] | Colon | H&E | [link data](https://bupt-ai-cz.github.io/HSA-NRL/), [link github](https://github.com/bupt-ai-cz/HSA-NRL), [link paper](https://ieeexplore.ieee.org/abstract/document/9600806) | Train: 111 normal, 842 serrated, 1404 adenocarcinoma, 664 adenoma, Test: 705 normal, 321 serrated, 840 adenocarcinoma, 273 adenoma samples | images + label | classi | patch (512×512) |  | 2021
+CoCaHis [61] | Colon | H&E | [link data](https://cocahis.irb.hr/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) | 82 (19 patients) | images + mask from different annotator | seg | patch | | 2021
 CoNIC 2022 [14] | Colon | H&E | [link data](https://conic-challenge.grand-challenge.org/), [link github](https://github.com/TissueImageAnalytics/CoNIC), [link paper](https://arxiv.org/pdf/2111.14485.pdf) | 4981 patch with 431.913 nuclei of 6 types | image + instance seg mask + classi mask | seg + classi + reg | patch (256x256) | 20x | 2022
 CoNSeP - HoVer-Net [15] | Colorectal adenocarcinoma | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/hovernet/), [link paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841519301045?via%3Dihub) | Train: 27 images, Test: 14 images, 24.319 nuclei | images + nuclei (location + class) | instance seg + classi (7: other, inflammatory, healthy epithelial, dysplastic/malignant epithelial, figroblast, muscle, endothelial) | patch (1000x1000) | 40x (UHCW) | 2019
 CPM-15 [16] | multiple (2) | H&E | [link data](https://drive.google.com/drive/folders/11ko-GcDsPpA9GBHuCtl_jNzWQl6qY_-I) | 15 (2905 nuclei) | images + nuclei seg + label | seg + classi | patch (400x400, 600x1000) | 20x, 40x (TCGA) | 
@@ -214,6 +215,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [59] Koohbanani, Navid Alemi, et al. "NuClick: a deep learning framework for interactive segmentation of microscopic images." Medical Image Analysis 65 (2020): 101771.
 
 [60] Qaiser, Talha, et al. "Her 2 challenge contest: a detailed assessment of automated her 2 scoring algorithms in whole slide images of breast cancer tissues." Histopathology 72.2 (2018): 227-238.
+
+[61] Sitnik, Dario, et al. "A dataset and a methodology for intraoperative computer-aided diagnosis of a metastatic colon cancer in a liver." Biomedical Signal Processing and Control 66 (2021): 102402.
 
 # Author
 Marie Duc - PhD Student
