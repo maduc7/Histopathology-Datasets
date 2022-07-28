@@ -27,6 +27,7 @@ BCSS [7] | Breast | H&E | [link data](https://bcsegmentation.grand-challenge.org
 BRACS [62] | Breast | H&E | [link data](https://www.bracs.icar.cnr.it/details/), [link paper](https://arxiv.org/pdf/2111.04740.pdf) | 547 wsi, 4539 ROIs, 189 Patients | images + label (6 subtypes tumor + normal) | classi (7) | wsi + patch | 40x - Aperio AT2 | 2021
 BreakHis [8] | Breast |	H&E	| [link data](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/), [link paper](https://www.inf.ufpr.br/lesoliveira/download/TBME-00608-2015-R2-preprint.pdf) |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (multiple magnifications: 40x, 100x, 200x, 400x) |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x | 2016
 BreCaHAD [9] | Breast | H&E | [link data](https://figshare.com/articles/dataset/BreCaHAD_A_Dataset_for_Breast_Cancer_Histopathological_Annotation_and_Diagnosis/7379186) [link paper](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-019-4121-7) | 162 | images + centroid with label | classi (6: mitosis, apoptosis, tumor nuclei, non-tumor nuclei, tubule, non-tubule) | patch (1360x1024) | 40x - Zeiss | 2019
+CAMEL [63] | Colon | | [link data](https://github.com/ThoroughImages/CAMEL), [link paper](https://arxiv.org/abs/1908.10555) | 177 wsi (156 with adenoma) | image + label (binary)| classi | patch (1280x1280) | | 2019
 CAMELYON16 [10] | Lymph node | H&E | [link data](https://camelyon16.grand-challenge.org/), [link paper](https://jamanetwork.com/journals/jama/article-abstract/2665774) | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | classi + seg | WSI | slide level analysis | 2016
 CAMELYON17 [11] | Lymph node | H&E | [link data](https://camelyon17.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/document/8447230) | Train: 500 (100 patients, 5 slides each); Test: 500 | images + binary masks | classi + seg | WSI | patient level analysis | 2017
 CAMELYON [12] | Breast (Lymph node) | H&E | [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/) | 1399 wsi | | | wsi | | 2017
@@ -221,10 +222,11 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [62] Brancati, Nadia, et al. "Bracs: A dataset for breast carcinoma subtyping in h&e histology images." arXiv preprint arXiv:2111.04740 (2021).
 
+[63] Xu, Gang, et al. "Camel: A weakly supervised learning framework for histopathology image segmentation." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.
+
 # Author
 Marie Duc - PhD Student
 
 email: marie.duc@med.uni-tuebingen.de
 
 https://paperswithcode.com/dataset/crc
-https://paperswithcode.com/dataset/colorectal-adenoma
