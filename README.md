@@ -45,6 +45,7 @@ DigestPath2019 - colonoscopy tissue segment [23] | Colon | H&E | [link data](htt
 Gelasca et al. [26] | Breast | H&E | [link data](https://bioimage.ucsb.edu/research/bio-segmentation) | 50 | images (malignant/benignant, 1.895 nuclei) + masks | classi + seg | Patch (896x768; 768x512) | |
 GlaS [24] | Colorectal (Gland) | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/), [link paper](https://arxiv.org/pdf/1603.00275v2.pdf) | 165 | Train: 85 (37 benign, 48 malignant); Test: 80 (37 benign, 43 malignant) | classi + seg | Patch (diff sizes - few hundred px) | 20x - Zeiss MIRAX MIDI | 2015
 Gleason_CNN [25] | Prostate | H&E | [link data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OCYCMP), [link github](https://github.com/eiriniar/gleason_CNN), [link paper](https://www.nature.com/articles/s41598-018-30535-1) | 5 tissue microarrays (200-300 spots) | images + patch and pixel annotation | classi | patch (3100x3100) | 40x - NanoZoomer-XR Digital slide scanner, Hamamatsu | 2018
+HER2 Contest [60] | Breast | H&E, IHC | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/her2contest), [link paper](https://onlinelibrary.wiley.com/doi/full/10.1111/his.13333) | 172 wsi from 86 patients | image + label (scoring) | classi (4 classes: 0, 1+, 2+, 3+) | wsi | 4x-40x - Hamamatsu NanoZoomer C9600 | 2016
 HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [link data](https://ecdp2020.grand-challenge.org/Home/), [link paper](https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf) | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | classi | wsi | 20x - 3D Histech Pannoramic 1000 | 2020
 Janowczyk et al. [28] | Breast |  H&E | [link data](http://www.andrewjanowczyk.com/use-case-1-nuclei-segmentation/), [link github](https://github.com/choosehappy/public/tree/master/DL%20tutorial%20Code) | 143 | images (12.000 nuclei) + masks | semantic seg | Patch (2000x2000) | 40x | 2015
 Kather et al. [29] | Colon | H&E | [link data](https://zenodo.org/record/1214456#.Yt_SxN_RZhE), [link github](https://github.com/jnkather/deep-stroma-histology/tree/v0.2), [link paper](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002730) | Train: 100k (86 wsi), Valid: 7180 (25 wsi) | image + label (9 tissue type) | classi | patch (224x224) |  | 2018
@@ -211,6 +212,8 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 [58] Koziarski, Michał, et al. "DiagSet: a dataset for prostate cancer histopathological image classification." arXiv preprint arXiv:2105.04014 (2021).
 
 [59] Koohbanani, Navid Alemi, et al. "NuClick: a deep learning framework for interactive segmentation of microscopic images." Medical Image Analysis 65 (2020): 101771.
+
+[60] Qaiser, Talha, et al. "Her 2 challenge contest: a detailed assessment of automated her 2 scoring algorithms in whole slide images of breast cancer tissues." Histopathology 72.2 (2018): 227-238.
 
 # Author
 Marie Duc - PhD Student
