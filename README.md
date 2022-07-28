@@ -55,11 +55,8 @@ HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [link data](https://ecdp2020.gra
 HER2 tumor ROIs | Breast | H&E | [link data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702524), [link paper](https://www.nature.com/articles/s41379-021-00911-w) | 273 | images + ROIs + label | classi (binary) | patch (512x512) | 20x - Aperio ScanScope | 2022 
 HunCRC | Colon | H&E | [link data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=91357370), [link github](https://github.com/qbeer/qupath-binarymask-extension), [link github](https://github.com/patbaa/crc_data_paper), [link paper](https://www.nature.com/articles/s41597-022-01450-y) | 101,389 patches - 200 wsi (from 200 patients) | images + label | classi (10) | wsi - patch (512x512) | 40x - 3DHistech Pannoramic 1000 | 2022
 
-NLST | Lung || [link data](), [link paper]() | 451 ||||| 2021
-
-SLN-Breast | Breast || [link data](), [link paper]() | 78 |||| 20x | 2021
-NADT-Prostate | Prostate || [link data](), [link paper]() | 40 |||| 20x | 2021
 CPTAC-PDA | Pancreas || [link data](), [link paper]() | 168 |||| 40x | 2021
+
 CPTAC-BRCA | Breast || [link data](), [link paper]() | 134 |||| 40x | 2021 
 CPTAC-COAD | Colon || [link data](), [link paper]() | 106 |||| 40x | 2021
 CPTAC-OV | Ovary || [link data](), [link paper]() | 102 |||| 40x | 2021
@@ -98,6 +95,7 @@ MIDOG 2021 [34] | Breast | H&E | [link data](https://imig.science/midog2021/the-
 MIDOG 2022 [35] | multiple (6 for train 10 for test) | H&E | [link data](https://midog2022.grand-challenge.org/) | Train: 405 cases, 9501 mitotic annotation | images + seg | seg | Patch | | 2022
 MoNuSAC 2020 [36] | multiple (Lung, Prostate, Kidney, Breast) | H&E | [link data](https://monusac-2020.grand-challenge.org/), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9446924) | 31.411 nuclei from 209 images | images + mask | instance seg + classi | patch (81x113 to 1422x2162) | 40x (TCGA) | 2020
 MoNuSeg [37a], [37b] | multiple (7) | H&E | [link data](https://monuseg.grand-challenge.org/Data/), [link github](https://github.com/ruchikaverma-iitg/MoNuSeg), [link paper](https://ieeexplore.ieee.org/document/8880654) | Train: 30, Test: 14 | images (Train: 22.000 nuclei, Test: 7000) + masks| instance seg | Patch (1000x1000) | 40x (from TCGA) | 2018
+NADT-Prostate | Prostate | Multiple (H&E, IHC) | [link data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=91357374), [link paper](https://www.sciencedirect.com/science/article/pii/S0302283821002074?via%3Dihub) | 1401 images from 37 patients |||| 20x | 2021
 Naylor et al. [38] | Breast | H&E | [link data](https://zenodo.org/record/2579118#.Yt5FWt_RaUk), [link paper](https://ieeexplore.ieee.org/document/8438559) | 50 | images (4.022 nuclei, 11 patients) + masks | seg | Patch (512x512) | 40x | 2018
 NuClick [59] | Lymphocyte | IHC | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/nuclick/), [link paper](https://arxiv.org/pdf/2005.14511.pdf) | Train: 671, Valid: 200 | images + mask | seg | patch (256x256) |  | 2020
 NuCLS [39] | Breast | H&E | [link data](https://nucls.grand-challenge.org/), [link paper](https://arxiv.org/ftp/arxiv/papers/2102/2102.09099.pdf) | 220.000 nuclei from 3.944 roi from 125 patients | roi + bounding bx + classification |  nuclear detection + classi + seg | patch | (TCGA) | 2021
@@ -110,6 +108,7 @@ PanNuke [44a], [44b] | multiple (19) | H&E | [link data](https://warwick.ac.uk/f
 PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[link data](https://patchcamelyon.grand-challenge.org/), [link github](https://github.com/basveeling/pcam) [link paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| classi |	Patch (96x96) | 10x | 2018
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [link data](https://segpc-2021.grand-challenge.org/), [link github](https://github.com/dsciitism/SegPC-2021), [link report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
 SICAPv2 [55] | Prostate | H&E | [link data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [link paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
+SLN-Breast | Breast | H&E | [link data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52763339), [link paper](https://www.nature.com/articles/s41591-019-0508-1) | 130 wsi from 78 patients | images + binary label | classi (binary - cancer/no cancer) | wsi | 20x -  Leica Aperio AT2 | 2021
 SPIE-AAPM_NCI BreastPathQ [47] | Breast | H&E | [link data](https://breastpathq.grand-challenge.org/), [link paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107263/) | 2579 patch from 96 wsi (64 patients) | images + score | regression | patches | 20x | 2019
 TCGA [48] | Multiple | H&E | [link data](https://portal.gdc.cancer.gov/), [link data](https://portal.imaging.datacommons.cancer.gov/explore/) | > 11k |  |  | WSI | 
 TIGER [49] | Breast | H&E | [link data](https://tiger.grand-challenge.org/) |  | | detection + segmentation + TILs scoring | wsi | | 2022
