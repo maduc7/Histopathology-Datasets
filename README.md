@@ -53,6 +53,7 @@ HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [link data](https://ecdp2020.gra
 Janowczyk et al. [28] | Breast |  H&E | [link data](http://www.andrewjanowczyk.com/use-case-1-nuclei-segmentation/), [link github](https://github.com/choosehappy/public/tree/master/DL%20tutorial%20Code) | 143 | images (12.000 nuclei) + masks | semantic seg | Patch (2000x2000) | 40x | 2015
 Kather et al. [29] | Colon | H&E | [link data](https://zenodo.org/record/1214456#.Yt_SxN_RZhE), [link github](https://github.com/jnkather/deep-stroma-histology/tree/v0.2), [link paper](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002730) | Train: 100k (86 wsi), Valid: 7180 (25 wsi) | image + label (9 tissue type) | classi | patch (224x224) |  | 2018
 Kather et al. [30] | Colon | H&E | [link data](https://zenodo.org/record/2530835#.Yt_ZdN_RZhE), [link data](https://zenodo.org/record/2530789#.Yt_Zc9_RZhE), [link data](https://zenodo.org/record/2532612#.Yt_Zdd_RZhE), [link github](https://github.com/jnkather/MSIfromHE), [link paper](https://www.nature.com/articles/s41591-019-0462-y#data-availability) |   |  | seg (tumor detection) + classi (MSI detection) |   |  | 2019
+Komura et al. [64] | multiple (32) | H&E | [link data](https://zenodo.org/record/5889558#.YuJHdd_RaUk), [link paper](https://www.sciencedirect.com/science/article/pii/S2211124722001486?via%3Dihub) | 271.700  | images + cancer type | classi | patch (256x256) | 6 magnification (from TCGA) | 2021
 Kumar [31] | multiple (8) | H&E | [link data](https://drive.google.com/drive/folders/1bI3RyshWej9c4YoRW-_q7lh7FOFDFUrJ), [link paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7872382) | Train: 16 (13.372 nuclei), test same organ (4.130 nuclei): 8, test diff organ (4.121 nuclei): 6 | images + nuclei seg + label | seg + classi | patch (1000x1000) | 40x (TCGA) | 2017
 LC25000 [54] | multiple (lung, colon) | H&E | [link dataset](https://github.com/tampapath/lung_colon_image_set), [link paper](https://arxiv.org/ftp/arxiv/papers/1912/1912.12142.pdf) | 25.000 (5 classes) | images + label | patch (768x768) | classi | 60x | 2019
 Lizard [32] | Colon | H&E | [link data](https://warwick.ac.uk/fac/cross_fac/tia/data/lizard/), [link paper](https://arxiv.org/pdf/2108.11195.pdf) | 495.179 nuclei | images + instance seg mask | seg | patch | 20x (DigestPath + CRAG + GlaS + PanNuke + CoNSeP + TCGA) | 2021
@@ -224,9 +225,9 @@ WSSS4LUAD [53] | Lung | H&E | [link data](https://wsss4luad.grand-challenge.org/
 
 [63] Xu, Gang, et al. "Camel: A weakly supervised learning framework for histopathology image segmentation." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.
 
+[64] Komura, Daisuke, et al. "Universal encoding of pan-cancer histology by deep texture representations." Cell Reports 38.9 (2022): 110424.
+
 # Author
 Marie Duc - PhD Student
 
 email: marie.duc@med.uni-tuebingen.de
-
-https://paperswithcode.com/dataset/crc
