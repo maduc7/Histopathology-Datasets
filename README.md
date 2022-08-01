@@ -7,10 +7,10 @@ I am happy if you want to help me update and/or improve this document. I think i
 I hope this list will help some of you.
 
 # Overview
-- [Ressources](#ressources)
+- [Resources](#resources)
 - [References](#references)
 
-# Ressources
+# Resources
 
 Please find in the table below some link and information about histopathology dataset that are publicly available.
 
