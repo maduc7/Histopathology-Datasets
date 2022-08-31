@@ -9,6 +9,7 @@ I hope this list will help some of you.
 # Overview
 - [Resources](#resources)
 - [References](#references)
+- [Datasets Search](#search)
 
 # Resources
 
@@ -269,11 +270,15 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [76] Saltz, Joel, et al. "Spatial organization and molecular correlation of tumor-infiltrating lymphocytes using deep learning on pathology images." Cell reports 23.1 (2018): 181-193.
 
-# Where to search for datasets:
+# Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
 - [Kaggle](https://www.kaggle.com/search?q=histology)
-- [Zenodo](https://zenodo.org/)
+- [Zenodo](https://zenodo.org/search?page=1&size=20&q=dataset%20histology)
 - [Grand Challenge](https://grand-challenge.org/)
+- [Warwick](https://warwick.ac.uk/fac/cross_fac/tia/data/)
+- [Cancer Imaging Archive](https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/)
+- [GDC Data Portal](https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22biospecimen%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Slide%20Image%22%5D%7D%7D%5D%7D)
+- [Kimia Lab](https://kimialab.uwaterloo.ca/kimia/index.php/data-and-code-2/)
 
 # Author
 Marie Duc - PhD Student
