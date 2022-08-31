@@ -269,6 +269,12 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [76] Saltz, Joel, et al. "Spatial organization and molecular correlation of tumor-infiltrating lymphocytes using deep learning on pathology images." Cell reports 23.1 (2018): 181-193.
 
+# Where to search for datasets:
+- [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
+- [Kaggle](https://www.kaggle.com/search?q=histology)
+- [Zenodo](https://zenodo.org/)
+- [Grand Challenge](https://grand-challenge.org/)
+
 # Author
 Marie Duc - PhD Student
 
