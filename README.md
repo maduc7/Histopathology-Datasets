@@ -279,6 +279,8 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 - [Cancer Imaging Archive](https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/)
 - [GDC Data Portal](https://portal.gdc.cancer.gov/repository?facetTab=files&filters=%7B%22op%22%3A%22and%22%2C%22content%22%3A%5B%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_category%22%2C%22value%22%3A%5B%22biospecimen%22%5D%7D%7D%2C%7B%22op%22%3A%22in%22%2C%22content%22%3A%7B%22field%22%3A%22files.data_type%22%2C%22value%22%3A%5B%22Slide%20Image%22%5D%7D%7D%5D%7D)
 - [Kimia Lab](https://kimialab.uwaterloo.ca/kimia/index.php/data-and-code-2/)
+- [Data Mendeley](https://data.mendeley.com/research-data/?type=DATASET&search=histology)
+- [Harvard Dataverse](https://dataverse.harvard.edu/dataverse/harvard?q=histology)
 
 # Author
 Marie Duc - PhD Student
