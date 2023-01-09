@@ -56,6 +56,7 @@ DLBCL-morphology [69] | Lymph Node | Multiple (H&E, IHC) | [data](https://wiki.c
 Gelasca et al. [26] | Breast | H&E | [data](https://bioimage.ucsb.edu/research/bio-segmentation) | 50 | images (malignant/benignant, 1.895 nuclei) + masks | classi + seg | Patch (896x768; 768x512) | |
 GlaS [24] | Colorectal (Gland) | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/), [paper](https://arxiv.org/pdf/1603.00275v2.pdf) | 165 | Train: 85 (37 benign, 48 malignant); Test: 80 (37 benign, 43 malignant) | classi + seg | Patch (diff sizes - few hundred px) | 20x - Zeiss MIRAX MIDI | 2015
 Gleason_CNN [25] | Prostate | H&E | [data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OCYCMP), [github](https://github.com/eiriniar/gleason_CNN), [paper](https://www.nature.com/articles/s41598-018-30535-1) | 5 tissue microarrays (200-300 spots) | images + patch and pixel annotation | classi | patch (3100x3100) | 40x - NanoZoomer-XR Digital slide scanner, Hamamatsu | 2018
+GTEx Portal [77] | Multiple | H&E | [data](https://gtexportal.org/home/histologyPage), [paper](https://www.nature.com/articles/ng.2653?report=reader) | 948 patients (multiple slides per patients) | images + genes + metadata |  | | | 
 HER2 Contest [60] | Breast | Multiple (H&E, IHC) | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/her2contest), [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/his.13333) | 172 wsi from 86 patients | image + label (scoring) | classi (4 classes: 0, 1+, 2+, 3+) | wsi | 4x-40x - Hamamatsu NanoZoomer C9600 | 2016
 HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [data](https://ecdp2020.grand-challenge.org/Home/), [paper](https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf) | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | classi | wsi | 20x - 3D Histech Pannoramic 1000 | 2020
 HER2 tumor ROIs [70] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702524), [paper](https://www.nature.com/articles/s41379-021-00911-w) | 273 | images + ROIs + label | classi (binary) | patch (512x512) | 20x - Aperio ScanScope | 2022 
@@ -269,6 +270,8 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 [75] Campanella, Gabriele, et al. "Clinical-grade computational pathology using weakly supervised deep learning on whole slide images." Nature medicine 25.8 (2019): 1301-1309.
 
 [76] Saltz, Joel, et al. "Spatial organization and molecular correlation of tumor-infiltrating lymphocytes using deep learning on pathology images." Cell reports 23.1 (2018): 181-193.
+
+[77] Lonsdale, John, et al. "The genotype-tissue expression (GTEx) project." Nature genetics 45.6 (2013): 580-585.
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
