@@ -34,7 +34,7 @@ CAMEL [63] | Colon | | [data](https://github.com/ThoroughImages/CAMEL), [paper](
 CAMELYON16 [10] | Lymph node | H&E | [data](https://camelyon16.grand-challenge.org/), [paper](https://jamanetwork.com/journals/jama/article-abstract/2665774) | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | classi + seg | WSI | slide level analysis | 2016
 CAMELYON17 [11] | Lymph node | H&E | [data](https://camelyon17.grand-challenge.org/), [paper](https://ieeexplore.ieee.org/document/8447230) | Train: 500 (100 patients, 5 slides each); Test: 500 | images + binary masks | classi + seg | WSI | patient level analysis | 2017
 CAMELYON [12] | Breast (Lymph node) | H&E | [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6007545/) | 1399 wsi | | | wsi | | 2017
-Cellseg [13] | multiple | multiple | [data](https://neurips22-cellseg.grand-challenge.org/), [github](https://github.com/JunMa11/NeurIPS-CellSeg) | | images + limited labeled patches | instance (cell) segmentation | wsi |  | 2022
+Cellseg [13] | multiple | multiple | [data](https://neurips22-cellseg.grand-challenge.org/), [paper](https://proceedings.mlr.press/v212/lee23b.html), [github](https://github.com/JunMa11/NeurIPS-CellSeg) | | images + limited labeled patches | instance (cell) segmentation | wsi |  | 2022
 Chaoyang [57] | Colon | H&E | [data](https://bupt-ai-cz.github.io/HSA-NRL/), [github](https://github.com/bupt-ai-cz/HSA-NRL), [paper](https://ieeexplore.ieee.org/abstract/document/9600806) | Train: 111 normal, 842 serrated, 1404 adenocarcinoma, 664 adenoma, Test: 705 normal, 321 serrated, 840 adenocarcinoma, 273 adenoma samples | images + label | classi | patch (512×512) |  | 2021
 CoCaHis [61] | Colon | H&E | [data](https://cocahis.irb.hr/), [paper](https://www.sciencedirect.com/science/article/abs/pii/S1746809420305085) | 82 (19 patients) | images + mask from different annotator | seg | patch | | 2021
 CoNIC 2022 [14] | Colon | H&E | [data](https://conic-challenge.grand-challenge.org/), [github](https://github.com/TissueImageAnalytics/CoNIC), [paper](https://arxiv.org/pdf/2111.14485.pdf) | 4981 patch with 431.913 nuclei of 6 types | image + instance seg mask + classi mask | seg + classi + reg | patch (256x256) | 20x | 2022
@@ -79,12 +79,13 @@ NADT-Prostate [72] | Prostate | Multiple (H&E, IHC) | [data](https://wiki.cancer
 Naylor et al. [38] | Breast | H&E | [data](https://zenodo.org/record/2579118#.Yt5FWt_RaUk), [paper](https://ieeexplore.ieee.org/document/8438559) | 50 | images (4.022 nuclei, 11 patients) + masks | seg | Patch (512x512) | 40x | 2018
 NuClick [59] | Lymphocyte | IHC | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/nuclick/), [paper](https://arxiv.org/pdf/2005.14511.pdf) | Train: 671, Valid: 200 | images + mask | seg | patch (256x256) |  | 2020
 NuCLS [39] | Breast | H&E | [data](https://nucls.grand-challenge.org/), [paper](https://arxiv.org/ftp/arxiv/papers/2102/2102.09099.pdf) | 220.000 nuclei from 3.944 roi from 125 patients | roi + bounding bx + classification |  nuclear detection + classi + seg | patch | (TCGA) | 2021
+OCELOT [78] | Multiple (Bladder, Endometrium, Head-and-neck, Kidney, Prostate, Stomach) | H&E | [data](https://ocelot2023.grand-challenge.org/ocelot2023/), [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Ryu_OCELOT_Overlapped_Cell_on_Tissue_Dataset_for_Histopathology_CVPR_2023_paper.html), [website](https://lunit-io.github.io/research/publications/ocelot/) | 304 Whole Slide Images (WSIs) (tr:val:te 6:2:2) | images + cell annotation + tissue annotation | cell and tissue detection (multitask learning) | patch (1024x1024) | (TCGA) | 2023
 Osteosarcoma-Tumor-Assessment | Bone | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52756935#52756935bcab02c187174a288dbcbf95d26179e8) | 1144 images from 4 || classi (3: non-tumor, viable tumor, necrosis) | patch (1024x1024) | 10x | 2019
 Ovarian Bevacizumab Response [73a], [73b] | Ovary | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=83593077#83593077f7288fc2370a43c3a1278185270ffc60), [paper](https://www.nature.com/articles/s41597-022-01127-6), [paper](https://www.sciencedirect.com/science/article/abs/pii/S0895611122000660) | 288 (78 patients) | images + clinical information | classi (treatment effectiveness) | wsi (avg 54342x41048) | 20x - Leica AT2 | 2021 
 PAIP2019 [40] | Liver | H&E | [data](https://paip2019.grand-challenge.org/), [paper](https://www.sciencedirect.com/science/article/pii/S1361841520302188) | Train: 50, Valid: 10, Test: 40 | images + binary mask | cancer seg | wsi | 20x - Aperio AT2 | 2019
-PAIP2020 [41] | Colon | H&E | [data](https://paip2020.grand-challenge.org/), [github](https://github.com/wisepaip/paip2020) | Train: 47, Valid: 31, Test: 40 | images + binary mask | cancer seg | wsi | 40x - Aperio AT2 | 2020
+PAIP2020 [41] | Colon | H&E | [data](paip2020.grand-challenge.org/), [github](https://github.com/wisepaip/paip2020) | Train: 47, Valid: 31, Test: 40 | images + binary mask | cancer seg | wsi | 40x - Aperio AT2 | 2020
 PAIP2021 [42] | Multiple (Colon, Prostate, Pancreas) | H&E | [data](https://paip2021.grand-challenge.org/Rules/), [paper](https://arxiv.org/ftp/arxiv/papers/2110/2110.12283.pdf) | Train: 150, Valid: 30, Test: 60 | wsi + xml gt | semantic seg | wsi | 20x - Aperio AT2 | 2021
-PAIP2023 [] | multiple organ | H&E | [data](https://2023paip.grand-challenge.org/download/), [paper](), [github]() | | | | | | 2023 
+PAIP2023 | multiple organ | H&E | [data](https://2023paip.grand-challenge.org/download/) | | | | | | 2023 
 The PANDA challenge [43]  | Prostate | H&E | [data](https://www.kaggle.com/c/prostate-cancer-grade-assessment/data), [paper](https://www.nature.com/articles/s41591-021-01620-2) | Train: 10.616, Valid: 393, Internal test: 545, External test: 1071 | images + label | classi | wsi | slide level analysis | 2020
 PanNuke [44a], [44b] | multiple (19) | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke), [github](https://jgamper.github.io/PanNukeDataset/), [paper](https://arxiv.org/pdf/2003.10778.pdf), [paper](https://link.springer.com/chapter/10.1007/978-3-030-23937-4_2) | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | instance seg + classi | patch | 40x | 2019
 PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[data](https://patchcamelyon.grand-challenge.org/), [github](https://github.com/basveeling/pcam) [paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| classi |	Patch (96x96) | 10x | 2018
@@ -95,7 +96,7 @@ SLN-Breast [75] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pa
 SPIE-AAPM_NCI BreastPathQ [47] | Breast | H&E | [data](https://breastpathq.grand-challenge.org/), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107263/) | 2579 patch from 96 wsi (64 patients) | images + score | regression | patches | 20x | 2019
 TCGA [48] | Multiple | H&E | [data](https://portal.gdc.cancer.gov/), [data](https://portal.imaging.datacommons.cancer.gov/explore/) | > 11k |  |  | WSI | 
 TCGA-TIL-WSI [76] | Multiple (13) | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=33948919#33948919036220c66a5a436f90e4a0b54367bfae), [github](https://github.com/SBU-BMI/u24_lymphocyte), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5943714/) | 5200 |||| (from TCGA) | 2019
-TIGER [49] | Breast | H&E | [data](https://tiger.grand-challenge.org/) [github](https://github.com/DIAGNijmegen/pathology-tiger-baseline), [github](https://github.com/DIAGNijmegen/pathology-tiger-algorithm-example) | WSIROIS: 195 wsi, WSIBULK: 93, WSITILS: 82 | images + rois + label (7) | detection + segmentation + TILs scoring | wsi | (from TCGA, RUMC, JB) | 2022
+TIGER [49] | Breast | H&E | [data](https://tiger.grand-challenge.org/), [paper](https://arxiv.org/abs/2206.11943), [github](https://github.com/DIAGNijmegen/pathology-tiger-baseline), [github](https://github.com/DIAGNijmegen/pathology-tiger-algorithm-example) | WSIROIS: 195 wsi, WSIBULK: 93, WSITILS: 82 | images + rois + label (7) | detection + segmentation + TILs scoring | wsi | (from TCGA, RUMC, JB) | 2022
 TNBC [50] | Breast | H&E | [data](https://peterjacknaylor.github.io/data/), [data](https://drive.google.com/drive/folders/1taB8boGyycjV4X1a2vCIAV9fwMxFSS41), [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438559) | 50 images, 4022 cells (11 patients) | images + nuclei seg + label | seg + classi | patch (512x512) | 40x - Philips Ultra Fast Scanner (Curie Inst.) | 2019
 TUPAC16 [51] | Breast | H&E | [data](https://tupac.grand-challenge.org/), [paper](https://arxiv.org/ftp/arxiv/papers/1807/1807.08284.pdf) | 500 | images + label | classi (wsi level) | WSI | 40x (from TCGA) | 2019
 TUPAC16 - aux [52] | Breast - mitoses| H&E | [data](https://tupac.grand-challenge.org/) | 73 | images + locations | seg | patch | 40x (from TCGA) Leica SCN400 | 2019
@@ -129,7 +130,7 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [12] Litjens, Geert, et al. "1399 H&E-stained sentinel lymph node sections of breast cancer patients: the CAMELYON dataset." GigaScience 7.6 (2018): giy065.
 
-[13]
+[13] Kwanyoung Lee, Hyungjo Byun, Hyunjung Shim Proceedings of The Cell Segmentation Challenge in Multi-modality High-Resolution Microscopy Images, PMLR 212:1-11, 2023. 
 
 [14] Graham, Simon, et al. "Conic: Colon nuclei identification and counting challenge 2022." arXiv preprint arXiv:2111.14485 (2021).
 
@@ -175,7 +176,7 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [34] Aubreville, Marc, et al. "Mitosis domain generalization in histopathology images--The MIDOG challenge." arXiv preprint arXiv:2204.03742 (2022).
 
-[35]
+[35] Aubreville, Marc, et al. "Mitosis domain generalization challenge (2021)." 25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2022). 2022.
 
 [36] Verma, Ruchika, et al. "MoNuSAC2020: A multi-organ nuclei segmentation and classification challenge." IEEE Transactions on Medical Imaging 40.12 (2021): 3413-3423.
 
@@ -213,9 +214,9 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [47] Petrick, Nicholas A., et al. "SPIE-AAPM-NCI BreastPathQ Challenge: an image analysis challenge for quantitative tumor cellularity assessment in breast cancer histology images following neoadjuvant treatment." Journal of Medical Imaging 8.3 (2021): 034501.
 
-[48]
+[48] R. L. Grossman, A. P. Heath, V. Ferretti, H. E. Varmus, D. R. Lowy, W. A. Kibbe, and L. M. Staudt. Toward a shared vision for cancer genomic data. New England Journal of Medicine, 375(12):1109–1112, 2016.
 
-[49]
+[49] Shephard, Adam, et al. "TIAger: Tumor-Infiltrating Lymphocyte Scoring in Breast Cancer for the TiGER Challenge." arXiv preprint arXiv:2206.11943 (2022).
 
 [50] P. Naylor, M. Laé, F. Reyal and T. Walter, "Segmentation of Nuclei in Histopathology Images by Deep Regression of the Distance Map," in IEEE Transactions on Medical Imaging, vol. 38, no. 2, pp. 448-459, Feb. 2019, doi: 10.1109/TMI.2018.2865709
 
@@ -274,6 +275,8 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 [76] Saltz, Joel, et al. "Spatial organization and molecular correlation of tumor-infiltrating lymphocytes using deep learning on pathology images." Cell reports 23.1 (2018): 181-193.
 
 [77] Lonsdale, John, et al. "The genotype-tissue expression (GTEx) project." Nature genetics 45.6 (2013): 580-585.
+
+[78] Ryu, Jeongun, et al. "OCELOT: Overlapped Cell on Tissue Dataset for Histopathology." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
