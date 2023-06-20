@@ -53,7 +53,7 @@ DiagSeg [58] | Prostate | H&E | [data](https://github.com/michalkoziarski/DiagSe
 DigestPath2019 - signet ring cell [22] | multiple (Gastric, Intestine) | H&E | [data](https://digestpath2019.grand-challenge.org/), [paper](https://arxiv.org/pdf/1907.03954.pdf) | Train: 460, Test: 226 | images + cell bounding boxes | cell detection | patch (avg 2kx2k) | 40x | 2019
 DigestPath2019 - colonoscopy tissue segment [23] | Colon | H&E | [data](https://digestpath2019.grand-challenge.org/), [paper](https://arxiv.org/pdf/1907.03954.pdf) | Train: 660, Test: 212 | images + lesion annotation | seg + classi (benign vs malignant) | patch (avg 5kx5k) | 20x | 2019
 DLBCL-morphology [69] | Lymph Node | Multiple (H&E, IHC) | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702520#119702520bcab02c187174a288dbcbf95d26179e8), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8137959/) | 52.194 patches - 246 images from 209 patients  | images + ROIs | | wsi - patch (240x240) | 40x - Aperio AT2 | 2022
-ENDO-AID [] | Endometrial Carcinoma | H&E | [data](https://zenodo.org/record/7372187#.Y-C6I4TMKUk), [info](https://endo-aid.grand-challenge.org/) | Test: 91 wsi | images + 15 pathologists assessments | grading score | wsi | 0.5um/px - 3DHistech P1000 | 2022
+ENDO-AID [] | Endometrial Carcinoma | H&E | [data](https://zenodo.org/record/7372187#.Y-C6I4TMKUk), [info](endo-aid.grand-challenge.org/) | Test: 91 wsi | images + 15 pathologists assessments | grading score | wsi | 0.5um/px - 3DHistech P1000 | 2022
 Gelasca et al. [26] | Breast | H&E | [data](https://bioimage.ucsb.edu/research/bio-segmentation) | 50 | images (malignant/benignant, 1.895 nuclei) + masks | classi + seg | Patch (896x768; 768x512) | |
 GlaS [24] | Colorectal (Gland) | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/glascontest/), [paper](https://arxiv.org/pdf/1603.00275v2.pdf) | 165 | Train: 85 (37 benign, 48 malignant); Test: 80 (37 benign, 43 malignant) | classi + seg | Patch (diff sizes - few hundred px) | 20x - Zeiss MIRAX MIDI | 2015
 Gleason_CNN [25] | Prostate | H&E | [data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OCYCMP), [github](https://github.com/eiriniar/gleason_CNN), [paper](https://www.nature.com/articles/s41598-018-30535-1) | 5 tissue microarrays (200-300 spots) | images + patch and pixel annotation | classi | patch (3100x3100) | 40x - NanoZoomer-XR Digital slide scanner, Hamamatsu | 2018
@@ -291,6 +291,6 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 - [Harvard Dataverse](https://dataverse.harvard.edu/dataverse/harvard?q=histology)
 
 # Author
-Marie Duc - PhD Student
+Marie (Duc) Stettler - PhD Student
 
-email: marie.duc@med.uni-tuebingen.de
+email: marie.stettler@med.uni-tuebingen.de
