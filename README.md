@@ -71,6 +71,7 @@ Kumar [31] | multiple (8) | H&E | [data](https://drive.google.com/drive/folders/
 LC25000 [54] | multiple (lung, colon) | H&E | [data](https://github.com/tampapath/lung_colon_image_set), [paper](https://arxiv.org/ftp/arxiv/papers/1912/1912.12142.pdf) | 25.000 (5 classes) | images + label | patch (768x768) | classi | 60x | 2019
 Lizard [32] | Colon | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/lizard/), [paper](https://arxiv.org/pdf/2108.11195.pdf) | 495.179 nuclei | images + instance seg mask | seg | patch | 20x (DigestPath + CRAG + GlaS + PanNuke + CoNSeP + TCGA) | 2021
 LYON19 [33] | Multiple (Breast, Colon, Protate) | IHC | [data](https://lyon19.grand-challenge.org/), [paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841519300829) | Test: 441 ROIs - 171.166 cells | images + corrdinates of cell | cell detection | patch | Pannoramic 250Flash II scanner | 2019
+MHIST [79] | colorectal polyps | H&E | [data](https://bmirds.github.io/MHIST/), [paper](https://arxiv.org/pdf/2101.12355.pdf) | 3,152 patches (train: 2,175; test: 977) | images + annotations + annotator agreement | classi (2) | patch (224x224) | 40x - Aperio AT2 | 2021
 MIDOG 2021 [34] | Breast | H&E | [data](https://imig.science/midog2021/the-dataset/), [paper](https://arxiv.org/pdf/2204.03742.pdf) | 200 wsi: 50 wsi / scanners - 4 scanners | images + roi | detection of mitotic figues | wsi | | 2021
 MIDOG 2022 [35] | multiple (6 for train 10 for test) | H&E | [data](https://midog2022.grand-challenge.org/) | Train: 405 cases, 9501 mitotic annotation | images + seg | seg | Patch | | 2022
 MoNuSAC 2020 [36] | multiple (Lung, Prostate, Kidney, Breast) | H&E | [data](https://monusac-2020.grand-challenge.org/), [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9446924) | 31.411 nuclei from 209 images | images + mask | instance seg + classi | patch (81x113 to 1422x2162) | 40x (TCGA) | 2020
@@ -277,6 +278,8 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 [77] Lonsdale, John, et al. "The genotype-tissue expression (GTEx) project." Nature genetics 45.6 (2013): 580-585.
 
 [78] Ryu, Jeongun, et al. "OCELOT: Overlapped Cell on Tissue Dataset for Histopathology." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
+
+[79] Jerry Wei, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour, “A Petri Dish for Histopathology Image Analysis”, International Conference on Artificial Intelligence in Medicine (AIME), 12721:11-24, 2021. 
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
