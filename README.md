@@ -298,6 +298,6 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 - [Driven Data](https://www.drivendata.org/competitions/search/?category=health)
 
 # Author
-Marie (Duc) Stettler - PhD Student
+Marie (Duc) Stettler
 
 email: marie.stettler@med.uni-tuebingen.de
