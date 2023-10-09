@@ -90,6 +90,7 @@ PAIP2023 | multiple organ | H&E | [data](https://2023paip.grand-challenge.org/do
 The PANDA challenge [43]  | Prostate | H&E | [data](https://www.kaggle.com/c/prostate-cancer-grade-assessment/data), [paper](https://www.nature.com/articles/s41591-021-01620-2) | Train: 10.616, Valid: 393, Internal test: 545, External test: 1071 | images + label | classi | wsi | slide level analysis | 2020
 PanNuke [44a], [44b] | multiple (19) | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/pannuke), [github](https://jgamper.github.io/PanNukeDataset/), [paper](https://arxiv.org/pdf/2003.10778.pdf), [paper](https://link.springer.com/chapter/10.1007/978-3-030-23937-4_2) | 189.744 nuclei (from >20k wsi) | images + nuclei (position + classi: neoplastic, connective, non-neoplastic epithelial, dead, inflammatory) | instance seg + classi | patch | 40x | 2019
 PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[data](https://patchcamelyon.grand-challenge.org/), [github](https://github.com/basveeling/pcam) [paper](https://arxiv.org/pdf/1806.03962.pdf)	| 327.680 |	images + binary label	| classi |	Patch (96x96) | 10x | 2018
+PATHVQA [80] | Multiple | Multiple | [data](https://drive.google.com/drive/folders/1G2C2_FUCyYQKCkSeCRRiTTsLDvOAjFj5), [paper](https://arxiv.org/pdf/2003.10286.pdf), [github](https://github.com/UCSD-AI4H/PathVQA) | 32,799 open-ended questions from 4,998 pathology images
 Post-NAT-BRCA [74] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117#52758117bcab02c187174a288dbcbf95d26179e8), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124665/) | 96 images from 54 patients | images + clinical info + annotation tumor cellularity and cell labels |  | wsi | 20x - Aperio | 2021
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [data](https://segpc-2021.grand-challenge.org/), [github](https://github.com/dsciitism/SegPC-2021), [report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
 SICAPv2 [55] | Prostate | H&E | [data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
@@ -282,6 +283,8 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 [78] Ryu, Jeongun, et al. "OCELOT: Overlapped Cell on Tissue Dataset for Histopathology." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023.
 
 [79] Jerry Wei, Arief Suriawinata, Bing Ren, Xiaoying Liu, Mikhail Lisovsky, Louis Vaickus, Charles Brown, Michael Baker, Naofumi Tomita, Lorenzo Torresani, Jason Wei, Saeed Hassanpour, “A Petri Dish for Histopathology Image Analysis”, International Conference on Artificial Intelligence in Medicine (AIME), 12721:11-24, 2021. 
+
+[80] Do, Tuong, et al. "Multiple meta-model quantifying for medical visual question answering." Medical Image Computing and Computer Assisted Intervention–MICCAI 2021: 24th International Conference, Strasbourg, France, September 27–October 1, 2021, Proceedings, Part V 24. Springer International Publishing, 2021.
 
 
 # Search
