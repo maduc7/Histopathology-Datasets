@@ -302,5 +302,3 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 # Author
 Marie (Duc) Stettler
-
-email: marie.stettler@med.uni-tuebingen.de
