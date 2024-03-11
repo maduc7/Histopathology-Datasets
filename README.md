@@ -62,6 +62,7 @@ HER2 Contest [60] | Breast | Multiple (H&E, IHC) | [data](https://warwick.ac.uk/
 HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [data](https://ecdp2020.grand-challenge.org/Home/), [paper](https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf) | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | classi | wsi | 20x - 3D Histech Pannoramic 1000 | 2020
 HER2 tumor ROIs [70] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702524), [paper](https://www.nature.com/articles/s41379-021-00911-w) | 273 | images + ROIs + label | classi (binary) | patch (512x512) | 20x - Aperio ScanScope | 2022 
 HunCRC [71] | Colon | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=91357370), [github](https://github.com/qbeer/qupath-binarymask-extension), [github](https://github.com/patbaa/crc_data_paper), [paper](https://www.nature.com/articles/s41597-022-01450-y) | 101,389 patches - 200 wsi (from 200 patients) | images + label | classi (10) | wsi - patch (512x512) | 40x - 3DHistech Pannoramic 1000 | 2022
+IMP-CRS 2024 [81a],[81b],[81c] | Colorectal | H&E | [data](https://rdm.inesctec.pt/dataset/nis-2023-008), [paper](https://www.nature.com/articles/s41698-024-00539-4) | Train 4433 wsi, Test: 900 wsi | images + label | classi (3) | wsi | 40x - Leica GT450 | 2024
 Janowczyk et al. [28] | Breast |  H&E | [data](http://www.andrewjanowczyk.com/use-case-1-nuclei-segmentation/), [github](https://github.com/choosehappy/public/tree/master/DL%20tutorial%20Code) | 143 | images (12.000 nuclei) + masks | semantic seg | Patch (2000x2000) | 40x | 2015
 Kather et al. [29] | Colon | H&E | [data](https://zenodo.org/record/1214456#.Yt_SxN_RZhE), [github](https://github.com/jnkather/deep-stroma-histology/tree/v0.2), [paper](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002730) | Train: 100k (86 wsi), Valid: 7180 (25 wsi) | image + label (9 tissue type) | classi | patch (224x224) |  | 2018
 Kather et al. [30] | Colon | H&E | [data](https://zenodo.org/record/2530835#.Yt_ZdN_RZhE), [data](https://zenodo.org/record/2530789#.Yt_Zc9_RZhE), [data](https://zenodo.org/record/2532612#.Yt_Zdd_RZhE), [github](https://github.com/jnkather/MSIfromHE), [paper](https://www.nature.com/articles/s41591-019-0462-y#data-availability) |   |  | seg (tumor detection) + classi (MSI detection) |   |  | 2019
@@ -286,6 +287,11 @@ WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [p
 
 [80] Do, Tuong, et al. "Multiple meta-model quantifying for medical visual question answering." Medical Image Computing and Computer Assisted Intervention–MICCAI 2021: 24th International Conference, Strasbourg, France, September 27–October 1, 2021, Proceedings, Part V 24. Springer International Publishing, 2021.
 
+[81a] Oliveira, S.P., Neto, P.C., Fraga, J., Montezuma, D., Monteiro, A., Monteiro, J., Ribeiro, L., Gonçalves, S., Pinto, I.M. and Cardoso, J.S., 2021. CAD systems for colorectal cancer from WSI are still not ready for clinical acceptance. Scientific Reports, 11(1), pp.1-15. https://doi.org/10.1038/s41598-021-93746-z
+
+[81b] Neto, P.C., Oliveira, S.P., Montezuma, D., Fraga, J., Monteiro, A., Ribeiro, L., Gonçalves, S., Pinto, I.M. and Cardoso, J.S., 2022. iMIL4PATH: A semi-supervised interpretable approach for colorectal whole-slide images. Cancers, 14(10). https://doi.org/10.3390/cancers14102489
+
+[81c] Neto, P.C., Montezuma, D., Oliveira, S.P., Oliveira, D., Fraga, J., Monteiro, A., Monteiro, J., Ribeiro, L., Gonçalves, S., Reinhard, S., Zlobec ,I. , Pinto, I.M. and Cardoso, J.S., 2024. An interpretable machine learning system for colorectal cancer diagnosis from pathology slides. npj Precision Oncology. https://doi.org/10.1038/s41698-024-00539-4
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
