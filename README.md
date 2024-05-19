@@ -31,6 +31,7 @@ BCSS [7] | Breast | H&E | [data](https://bcsegmentation.grand-challenge.org/), [
 Bone-Marrow-Cytomorphology [68] | Marrow | May-Grünwald-Giemsa/Pappenheim | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=101941770#101941770bcab02c187174a288dbcbf95d26179e8), [paper](https://ashpublications.org/blood/article/138/20/1917/477932/Highly-accurate-differentiation-of-bone-marrow) | 171.375 cells from 945 patients | images + label | classi (21) | patch (250x250 - single cell) | 40x | 2021 
 BRACS [62] | Breast | H&E | [data](https://www.bracs.icar.cnr.it/details/), [paper](https://arxiv.org/pdf/2111.04740.pdf) | 547 wsi, 4539 ROIs, 189 Patients | images + label (6 subtypes tumor + normal) | classi (7) | wsi + patch | 40x - Aperio AT2 | 2021
 BreakHis [8] | Breast |	H&E	| [data](https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/), [paper](https://www.inf.ufpr.br/lesoliveira/download/TBME-00608-2015-R2-preprint.pdf) |	7.909 (2480 benign, 5429 malignant)	| images + binary label + tumor type (8) (multiple magnifications: 40x, 100x, 200x, 400x) |	classi |	Patch (700x460) | 40x, 100x, 200x, 400x | 2016
+BRCA-M2C [95] | breast | H&E | [data](https://drive.usercontent.google.com/download?id=1HvIzsOs5FP9OdlJKAnU_PM6tX4B2Q1rk&export=download&authuser=0), [paper](https://arxiv.org/abs/2110.04886) |  120 patches belonging to 113 patients (from TCGA) | images+point annotation |  multi-class cell detection | patch (500x500) | 20x | 2021
 BreCaHAD [9] | Breast | H&E | [data](https://figshare.com/articles/dataset/BreCaHAD_A_Dataset_for_Breast_Cancer_Histopathological_Annotation_and_Diagnosis/7379186) [paper](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-019-4121-7) | 162 | images + centroid with label | classi (6: mitosis, apoptosis, tumor nuclei, non-tumor nuclei, tubule, non-tubule) | patch (1360x1024) | 40x - Zeiss | 2019
 CAMEL [63] | Colon | | [data](https://github.com/ThoroughImages/CAMEL), [paper](https://arxiv.org/abs/1908.10555) | 177 wsi (156 with adenoma) | image + label (binary)| classi | patch (1280x1280) | | 2019
 CAMELYON16 [10] | Lymph node | H&E | [data](https://camelyon16.grand-challenge.org/), [paper](https://jamanetwork.com/journals/jama/article-abstract/2665774) | Train: 270 (160 Normal, 110 with metastases); Test: 130 | images + binary masks | classi + seg | WSI | slide level analysis | 2016
@@ -334,6 +335,8 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 [93] Aubreville Marc, Wilm, Frauke et al. "A comprehensive multi-domain dataset for mitotic figure detection". Sci Data 10, 484 (2023). https://doi.org/10.1038/s41597-023-02327-4 
 
 [94] Paul Cohen, Joseph, et al. "Count-ception: Counting by fully convolutional redundant counting." Proceedings of the IEEE International conference on computer vision workshops. 2017. https://doi.org/10.1109/ICCVW.2017.9
+
+[95] Huang, Junjia, et al. "Affine-Consistent Transformer for Multi-Class Cell Nuclei Detection." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
