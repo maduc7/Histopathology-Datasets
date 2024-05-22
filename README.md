@@ -107,7 +107,7 @@ PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[data](https://patchcamelyon.gra
 PATHVQA [80] | Multiple | Multiple | [data](https://drive.google.com/drive/folders/1G2C2_FUCyYQKCkSeCRRiTTsLDvOAjFj5), [paper](https://arxiv.org/pdf/2003.10286.pdf), [github](https://github.com/UCSD-AI4H/PathVQA) | 32,799 open-ended questions from 4,998 images | image + question + answer | VQA | patch/image | | 2020
 Post-NAT-BRCA [74] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117#52758117bcab02c187174a288dbcbf95d26179e8), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124665/) | 96 images from 54 patients | images + clinical info + annotation tumor cellularity and cell labels |  | wsi | 20x - Aperio | 2021
 Prostate Fused-MRI-Pathology [83] | Prostate | H&E | [data](https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/) | 114 images from 16 patients | images + tumor Annotations + mpMRI | | wsi | 20x - Aperio | 2016 
-RINGS | prostate | H&E | [data](https://data.mendeley.com/datasets/h8bdwrtnr5/1) , [paper](https://www.sciencedirect.com/science/article/pii/S0933365721000695)| train: 1000 , test: 500 with 18'851 glands | images+mask |  gland segmentation and tumor segmentation | patch (1500x1500) | 40x | 2021
+RINGS [96] | prostate | H&E | [data](https://data.mendeley.com/datasets/h8bdwrtnr5/1) , [paper](https://www.sciencedirect.com/science/article/pii/S0933365721000695)| train: 1000 , test: 500 with 18'851 glands | images+mask |  gland segmentation and tumor segmentation | patch (1500x1500) | 40x | 2021
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [data](https://segpc-2021.grand-challenge.org/), [github](https://github.com/dsciitism/SegPC-2021), [report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
 SICAPv2 [55] | Prostate | H&E | [data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
 SLN-Breast [75] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52763339), [paper](https://www.nature.com/articles/s41591-019-0508-1) | 130 wsi from 78 patients | images + binary label | classi (binary - cancer/no cancer) | wsi | 20x -  Leica Aperio AT2 | 2021
@@ -338,6 +338,9 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 [94] Paul Cohen, Joseph, et al. "Count-ception: Counting by fully convolutional redundant counting." Proceedings of the IEEE International conference on computer vision workshops. 2017. https://doi.org/10.1109/ICCVW.2017.9
 
 [95] Huang, Junjia, et al. "Affine-Consistent Transformer for Multi-Class Cell Nuclei Detection." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.
+
+[96] Salvi, Massimo, et al. "A hybrid deep learning approach for gland segmentation in prostate histopathological images." Artificial Intelligence in Medicine 115 (2021): 102076.
+
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
