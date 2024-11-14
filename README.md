@@ -7,9 +7,12 @@ I am happy if you want to help me update and/or improve this document. I think i
 I hope this list will help some of you.
 
 # Overview
+- [`Histopathology Datasets for Machine Learning`](#histopathology-datasets-for-machine-learning)
+- [Overview](#overview)
 - [Resources](#resources)
 - [References](#references)
-- [Datasets Search](#search)
+- [Search](#search)
+- [Author](#author)
 
 # Resources
 
@@ -77,6 +80,7 @@ Komura et al. [64] | multiple (32) | H&E | [data](https://zenodo.org/record/5889
 Kumar [31] | multiple (8) | H&E | [data](https://drive.google.com/drive/folders/1bI3RyshWej9c4YoRW-_q7lh7FOFDFUrJ), [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7872382) | Train: 16 (13.372 nuclei), test same organ (4.130 nuclei): 8, test diff organ (4.121 nuclei): 6 | images + nuclei seg + label | seg + classi | patch (1000x1000) | 40x (TCGA) | 2017
 LC25000 [54] | multiple (lung, colon) | H&E | [data](https://github.com/tampapath/lung_colon_image_set), [paper](https://arxiv.org/ftp/arxiv/papers/1912/1912.12142.pdf) | 25.000 (5 classes) | images + label | patch (768x768) | classi | 60x | 2019
 Lizard [32] | Colon | H&E | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/lizard/), [paper](https://arxiv.org/pdf/2108.11195.pdf) | 495.179 nuclei | images + instance seg mask | seg | patch | 20x (DigestPath + CRAG + GlaS + PanNuke + CoNSeP + TCGA) | 2021
+LubLung [97] | Lung | H&E | [data](https://github.com/animgoeth/LubLung), [paper](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-022-10081-w) | 23,199 patches (9 classes)| images + labels |  classi | patch (87x87) | | 2021 
 LYON19 [33] | Multiple (Breast, Colon, Protate) | IHC | [data](https://lyon19.grand-challenge.org/), [paper](https://www.sciencedirect.com/science/article/abs/pii/S1361841519300829) | Test: 441 ROIs - 171.166 cells | images + corrdinates of cell | cell detection | patch | Pannoramic 250Flash II scanner | 2019
 MBM [94] | bone | H&E | [data](https://github.com/ieee8023/countception), [paper](https://arxiv.org/abs/1703.08710) | 44 patches | images+mask |  cell detection | patch (600x600) | 40x | 2017
 MHIST [79] | colorectal polyps | H&E | [data](https://bmirds.github.io/MHIST/), [paper](https://arxiv.org/pdf/2101.12355.pdf) | 3,152 patches (train: 2,175; test: 977) | images + annotations + annotator agreement | classi (2) | patch (224x224) | 40x - Aperio AT2 | 2021
@@ -108,6 +112,7 @@ PATHVQA [80] | Multiple | Multiple | [data](https://drive.google.com/drive/folde
 Post-NAT-BRCA [74] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117#52758117bcab02c187174a288dbcbf95d26179e8), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124665/) | 96 images from 54 patients | images + clinical info + annotation tumor cellularity and cell labels |  | wsi | 20x - Aperio | 2021
 Prostate Fused-MRI-Pathology [83] | Prostate | H&E | [data](https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/) | 114 images from 16 patients | images + tumor Annotations + mpMRI | | wsi | 20x - Aperio | 2016 
 RINGS [96] | prostate | H&E | [data](https://data.mendeley.com/datasets/h8bdwrtnr5/1) , [paper](https://www.sciencedirect.com/science/article/pii/S0933365721000695)| train: 1000 , test: 500 with 18'851 glands | images+mask |  gland segmentation and tumor segmentation | patch (1500x1500) | 40x | 2021
+SegLungTCGA [97] | Lung | H&E | [data](https://github.com/animgoeth/SegLungTCGA), [paper](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-022-10081-w#article-info) | 454 images + file mapping info | images | segmentation (9 classes) | segmented (87x87 patches) wsi | (from TCGA) | 2021
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [data](https://segpc-2021.grand-challenge.org/), [github](https://github.com/dsciitism/SegPC-2021), [report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
 SICAPv2 [55] | Prostate | H&E | [data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
 SLN-Breast [75] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52763339), [paper](https://www.nature.com/articles/s41591-019-0508-1) | 130 wsi from 78 patients | images + binary label | classi (binary - cancer/no cancer) | wsi | 20x -  Leica Aperio AT2 | 2021
@@ -340,6 +345,8 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 [95] Huang, Junjia, et al. "Affine-Consistent Transformer for Multi-Class Cell Nuclei Detection." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.
 
 [96] Salvi, Massimo, et al. "A hybrid deep learning approach for gland segmentation in prostate histopathological images." Artificial Intelligence in Medicine 115 (2021): 102076.
+
+[97] Rączkowska, A., Paśnik, I., Kukiełka, M. et al. "Deep learning-based tumor microenvironment segmentation is predictive of tumor mutations and patient survival in non-small-cell lung cancer." BMC Cancer 22, 1001 (2022).
 
 
 # Search
