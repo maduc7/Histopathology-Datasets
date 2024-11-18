@@ -129,6 +129,7 @@ UniToPatho [56] | Colon | H&E | [data](https://github.com/EIDOSlab/UNITOPATHO), 
 UPENN-GBM [82] | glioblastoma | H&E | [data](https://www.cancerimagingarchive.net/collection/upenn-gbm/),[paper](https://www.nature.com/articles/s41597-022-01560-7) | 71 wsi from 34 patients | images + clinical data + mpMRI |  | WSI | 40x | 2022 
 VisioMel | Melanoma | H&E | [data](https://www.drivendata.org/competitions/148/visiomel-melanoma/page/717/), [code](https://drivendata.co/blog/visiomel-melanoma-benchmark) | train: 1342 wsi, test: 600, valid: 1200, 16 WSIs annotated | images + annotation + clinical metadata + label | classi (2) |  |  |2023
 WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
+Follicle countring [98] | Ovary | H&E | [data](https://zenodo.org/records/12804564), [paper](https://link.springer.com/chapter/10.1007/978-3-031-73158-7_17#citeas), [code](https://github.com/vincentblot28/follicle-assessment) | 643 cut slices (from 92 mice) | images + label | Object Detection (3 classes) | ROIs | Panoramic 250 Flash, Slide Scanner (3DHISTECH Ltd. HUNGARY) | 2024
 
 # References
 [1a] Li, Zhang, et al. "Computer-aided diagnosis of lung carcinoma using deep learning-a pilot study." arXiv preprint arXiv:1803.05471 (2018).
@@ -347,6 +348,9 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 [96] Salvi, Massimo, et al. "A hybrid deep learning approach for gland segmentation in prostate histopathological images." Artificial Intelligence in Medicine 115 (2021): 102076.
 
 [97] Rączkowska, A., Paśnik, I., Kukiełka, M. et al. "Deep learning-based tumor microenvironment segmentation is predictive of tumor mutations and patient survival in non-small-cell lung cancer." BMC Cancer 22, 1001 (2022).
+
+[98] Blot, V. et al. "Efficient Precision Control in Object Detection Models for Enhanced and Reliable Ovarian Follicle Counting". In: Sudre, C.H., Mehta, R., Ouyang, C., Qin, C., Rakic, M., Wells, W.M. (eds) Uncertainty for Safe Utilization of Machine Learning in Medical Imaging. UNSURE 2024. Lecture Notes in Computer Science, vol 15167. Springer, Cham. https://doi.org/10.1007/978-3-031-73158-7_17
+
 
 
 # Search
