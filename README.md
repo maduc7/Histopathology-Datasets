@@ -130,6 +130,8 @@ UPENN-GBM [82] | glioblastoma | H&E | [data](https://www.cancerimagingarchive.ne
 VisioMel | Melanoma | H&E | [data](https://www.drivendata.org/competitions/148/visiomel-melanoma/page/717/), [code](https://drivendata.co/blog/visiomel-melanoma-benchmark) | train: 1342 wsi, test: 600, valid: 1200, 16 WSIs annotated | images + annotation + clinical metadata + label | classi (2) |  |  |2023
 WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
 Follicle countring [98] | Ovary | H&E | [data](https://zenodo.org/records/12804564), [paper](https://link.springer.com/chapter/10.1007/978-3-031-73158-7_17#citeas), [code](https://github.com/vincentblot28/follicle-assessment) | 643 cut slices (from 92 mice) | images + label | Object Detection (3 classes) | ROIs | Panoramic 250 Flash, Slide Scanner (3DHISTECH Ltd. HUNGARY) | 2024
+CPTAC-CCRCC [99] | Clear Cell Renal Cell Carcinoma | H&E | [data](https://www.cancerimagingarchive.net/collection/cptac-ccrcc/) | 783 tissue slides and 128 non-CCRCC tissue slides | images + label | classi (2) | wsi | - | 2024
+The Digital Brain Tumour Atlas [100] | Brain | H&E | [data](https://search.kg.ebrains.eu/instances/Dataset/8fc108ab-e2b4-406f-8999-60269dc1f994), [paper](https://www.nature.com/articles/s41597-022-01157-0) | 3,115 histological slides of 2,880 patients | images + label | classi | wsi | - | 2022
 
 # References
 [1a] Li, Zhang, et al. "Computer-aided diagnosis of lung carcinoma using deep learning-a pilot study." arXiv preprint arXiv:1803.05471 (2018).
@@ -351,7 +353,9 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 
 [98] Blot, V. et al. "Efficient Precision Control in Object Detection Models for Enhanced and Reliable Ovarian Follicle Counting". In: Sudre, C.H., Mehta, R., Ouyang, C., Qin, C., Rakic, M., Wells, W.M. (eds) Uncertainty for Safe Utilization of Machine Learning in Medical Imaging. UNSURE 2024. Lecture Notes in Computer Science, vol 15167. Springer, Cham. https://doi.org/10.1007/978-3-031-73158-7_17
 
+[99] National Cancer Institute Clinical Proteomic Tumor Analysis Consortium (CPTAC). (2018). The Clinical Proteomic Tumor Analysis Consortium Clear Cell Renal Cell Carcinoma Collection (CPTAC-CCRCC) (Version 13) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/k9/tcia.2018.oblamn27
 
+[100] Roetzer-Pejrimovsky, T., Moser, A. C., Atli, B., Vogel, C. C., Mercea, P. A., Prihoda, R., Gelpi, E., Haberler, C., Höftberger, R., Hainfellner, J. A., Baumann, B., Langs, G., & Woehrer, A. (2022). The Digital Brain Tumour Atlas, an open histopathology resource [Data set]. EBRAINS. https://doi.org/10.25493/WQ48-ZGX
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
