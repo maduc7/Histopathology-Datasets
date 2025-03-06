@@ -118,6 +118,7 @@ SegLungTCGA [97] | Lung | H&E | [data](https://github.com/animgoeth/SegLungTCGA)
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [data](https://segpc-2021.grand-challenge.org/), [github](https://github.com/dsciitism/SegPC-2021), [report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
 SICAPv2 [55] | Prostate | H&E | [data](https://data.mendeley.com/datasets/9xxm58dvs3/1), [paper](https://arxiv.org/pdf/2105.10490.pdf) | 155 (from 95 patients) | images + global Gleason scores and patch-level Gleason grades | classi | wsi | 40x - Ventana iScan Coreo | 2020
 SLN-Breast [75] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52763339), [paper](https://www.nature.com/articles/s41591-019-0508-1) | 130 wsi from 78 patients | images + binary label | classi (binary - cancer/no cancer) | wsi | 20x -  Leica Aperio AT2 | 2021
+SPIDER [101]| Multiple (Skin, Colorectal, Thorax) | H&E | [data](https://github.com/HistAI/SPIDER), [paper](https://arxiv.org/abs/2503.02876)| Skin: 159,854 patches, Colorectal: 77,182 patches, Thorax: 78,307 patches | images + labels | classification | patch (1120x1120) | 20x magnification| 2025
 SPIE-AAPM_NCI BreastPathQ [47] | Breast | H&E | [data](https://breastpathq.grand-challenge.org/), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8107263/) | 2579 patch from 96 wsi (64 patients) | images + score | regression | patches | 20x | 2019
 TCGA [48] | Multiple | H&E | [data](https://portal.gdc.cancer.gov/), [data](https://portal.imaging.datacommons.cancer.gov/explore/) | > 11k |  |  | WSI ||
 TCGA-TIL-WSI [76] | Multiple (13) | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=33948919#33948919036220c66a5a436f90e4a0b54367bfae), [github](https://github.com/SBU-BMI/u24_lymphocyte), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5943714/) | 5200 |||| (from TCGA) | 2019
@@ -358,6 +359,9 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 [99] National Cancer Institute Clinical Proteomic Tumor Analysis Consortium (CPTAC). (2018). The Clinical Proteomic Tumor Analysis Consortium Clear Cell Renal Cell Carcinoma Collection (CPTAC-CCRCC) (Version 13) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/k9/tcia.2018.oblamn27
 
 [100] Roetzer-Pejrimovsky, T., Moser, A. C., Atli, B., Vogel, C. C., Mercea, P. A., Prihoda, R., Gelpi, E., Haberler, C., Höftberger, R., Hainfellner, J. A., Baumann, B., Langs, G., & Woehrer, A. (2022). The Digital Brain Tumour Atlas, an open histopathology resource [Data set]. EBRAINS. https://doi.org/10.25493/WQ48-ZGX
+
+[101] Dmitry Nechaev, Alexey Pchelnikov, and Ekaterina Ivanova. Spider: A comprehensive multi-organ supervised
+pathology dataset and baseline models, 2025. https://doi.org/10.48550/arXiv.2503.02876.
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
