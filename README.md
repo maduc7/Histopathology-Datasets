@@ -113,6 +113,7 @@ PatchCamelyon [45a], [45b] | Lymph node |	H&E |	[data](https://patchcamelyon.gra
 PATHVQA [80] | Multiple | Multiple | [data](https://drive.google.com/drive/folders/1G2C2_FUCyYQKCkSeCRRiTTsLDvOAjFj5), [paper](https://arxiv.org/pdf/2003.10286.pdf), [github](https://github.com/UCSD-AI4H/PathVQA) | 32,799 open-ended questions from 4,998 images | image + question + answer | VQA | patch/image | | 2020
 Post-NAT-BRCA [74] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117#52758117bcab02c187174a288dbcbf95d26179e8), [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6124665/) | 96 images from 54 patients | images + clinical info + annotation tumor cellularity and cell labels |  | wsi | 20x - Aperio | 2021
 Prostate Fused-MRI-Pathology [83] | Prostate | H&E | [data](https://www.cancerimagingarchive.net/collection/prostate-fused-mri-pathology/) | 114 images from 16 patients | images + tumor Annotations + mpMRI | | wsi | 20x - Aperio | 2016 
+PUMA [102] | Melanoma | H&E | [data](https://zenodo.org/records/15050523), [paper](https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giaf011/8024182) | 206 ROIs (primary: 103, metastatic: 103) | images + nuclei and tissue annotations + context image | nuclei and tissue segmentation | patch(1024x1024) context(5120x5120) | 40x - Nanozoomer XR C12000–21/–22 | 2024
 RINGS [96] | prostate | H&E | [data](https://data.mendeley.com/datasets/h8bdwrtnr5/1) , [paper](https://www.sciencedirect.com/science/article/pii/S0933365721000695)| train: 1000 , test: 500 with 18'851 glands | images+mask |  gland segmentation and tumor segmentation | patch (1500x1500) | 40x | 2021
 SegLungTCGA [97] | Lung | H&E | [data](https://github.com/animgoeth/SegLungTCGA), [paper](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-022-10081-w#article-info) | 454 images + file mapping info | images | segmentation (9 classes) | segmented (87x87 patches) wsi | (from TCGA) | 2021
 SegPC-2021 [46a], [46b], [46c], [46d] | Blood | Jenner-Giemsa | [data](https://segpc-2021.grand-challenge.org/), [github](https://github.com/dsciitism/SegPC-2021), [report](https://ieee-dataport.org/open-access/segpc-2021-segmentation-multiple-myeloma-plasma-cells-microscopic-images) | 775 images, Train: 298, Valid: 200, Test: 277 | images + nucleus and cytoplasma | plasma cell segmentation |  | | 2021
@@ -133,6 +134,7 @@ UniToPatho [56] | Colon | H&E | [data](https://github.com/EIDOSlab/UNITOPATHO), 
 UPENN-GBM [82] | glioblastoma | H&E | [data](https://www.cancerimagingarchive.net/collection/upenn-gbm/),[paper](https://www.nature.com/articles/s41597-022-01560-7) | 71 wsi from 34 patients | images + clinical data + mpMRI |  | WSI | 40x | 2022 
 VisioMel | Melanoma | H&E | [data](https://www.drivendata.org/competitions/148/visiomel-melanoma/page/717/), [code](https://drivendata.co/blog/visiomel-melanoma-benchmark) | train: 1342 wsi, test: 600, valid: 1200, 16 WSIs annotated | images + annotation + clinical metadata + label | classi (2) |  |  |2023
 WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
+
 
 
 
@@ -362,6 +364,8 @@ Restaining-based annotation for cancer histology segmentation to overcome annota
 
 [101] Dmitry Nechaev, Alexey Pchelnikov, and Ekaterina Ivanova. Spider: A comprehensive multi-organ supervised
 pathology dataset and baseline models, 2025. https://doi.org/10.48550/arXiv.2503.02876.
+
+[102] Mark Schuiveling, Hong Liu, Daniel Eek, Gerben E Breimer, Karijn P M Suijkerbuijk, Willeke A M Blokx, Mitko Veta, A novel dataset for nuclei and tissue segmentation in melanoma with baseline nuclei segmentation and tissue segmentation benchmarks, GigaScience, Volume 14, 2025, giaf011, https://doi.org/10.1093/gigascience/giaf011.
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
