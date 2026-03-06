@@ -72,6 +72,7 @@ GTEx Portal [77] | Multiple | H&E | [data](https://gtexportal.org/home/histology
 HER2 Contest [60] | Breast | Multiple (H&E, IHC) | [data](https://warwick.ac.uk/fac/cross_fac/tia/data/her2contest), [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/his.13333) | 172 wsi from 86 patients | image + label (scoring) | classi (4 classes: 0, 1+, 2+, 3+) | wsi | 4x-40x - Hamamatsu NanoZoomer C9600 | 2016
 HEROHE - ECDP2020 [27a], [27b] | Breast | H&E | [data](https://ecdp2020.grand-challenge.org/Home/), [paper](https://arxiv.org/ftp/arxiv/papers/2111/2111.04738.pdf) | Train: 359 (positive: 144, negatives: 215), Test: 150 (positive: 60, negative: 90) | images + binary label | classi | wsi | 20x - 3D Histech Pannoramic 1000 | 2020
 HER2 tumor ROIs [70] | Breast | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=119702524), [paper](https://www.nature.com/articles/s41379-021-00911-w) | 273 | images + ROIs + label | classi (binary) | patch (512x512) | 20x - Aperio ScanScope | 2022 
+HISTAI [104] | multiple | H&E, IHC, Special | [data](https://huggingface.co/collections/histai/histai-whole-slide-images-dataset), [paper](https://arxiv.org/abs/2505.12120) | 112,801 WSI | images + pathology reports |  | wsi | 20x, 40x, Leica Aperio | 2025
 HunCRC [71] | Colon | H&E | [data](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=91357370), [github](https://github.com/qbeer/qupath-binarymask-extension), [github](https://github.com/patbaa/crc_data_paper), [paper](https://www.nature.com/articles/s41597-022-01450-y) | 101,389 patches - 200 wsi (from 200 patients) | images + label | classi (10) | wsi - patch (512x512) | 40x - 3DHistech Pannoramic 1000 | 2022
 IMP-CRS 2024 [81a],[81b],[81c] | Colorectal | H&E | [data](https://rdm.inesctec.pt/dataset/nis-2023-008), [paper](https://www.nature.com/articles/s41698-024-00539-4) | Train 4433 wsi, Test: 900 wsi | images + label | classi (3) | wsi | 40x - Leica GT450 | 2024
 Ivy-GAP [103] | Brain | H&E, ISH | [data](https://registry.opendata.aws/allen-ivy-glioblastoma-atlas/), [paper](https://www.science.org/doi/abs/10.1126/science.aaf2666) | 41cases,42tumors,947blocks，30304sections | images+RNA-seq+clinical data |  | wsi | 20x | 2018 
@@ -371,6 +372,8 @@ pathology dataset and baseline models, 2025. https://doi.org/10.48550/arXiv.2503
 [102] Mark Schuiveling, Hong Liu, Daniel Eek, Gerben E Breimer, Karijn P M Suijkerbuijk, Willeke A M Blokx, Mitko Veta, A novel dataset for nuclei and tissue segmentation in melanoma with baseline nuclei segmentation and tissue segmentation benchmarks, GigaScience, Volume 14, 2025, giaf011, https://doi.org/10.1093/gigascience/giaf011.
 
 [103] Puchalski, Ralph B., et al. "An anatomic transcriptional atlas of human glioblastoma." *Science* 360.6389 (2018): 660-663.
+
+[104] Dmitry Nechaev, Alexey Pchelnikov, and Ekaterina Ivanova. HISTAI: An Open-Source, Large-Scale Whole Slide Image Dataset for Computational Pathology (2025)
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
