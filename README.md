@@ -135,6 +135,7 @@ TUPAC16 - aux [52] | Breast - mitoses| H&E | [data](https://tupac.grand-challeng
 UniToPatho [56] | Colon | H&E | [data](https://github.com/EIDOSlab/UNITOPATHO), [paper](https://ieeexplore.ieee.org/document/9506198) | 9.536 from 292 wsi | images + label (6 classes) | classi | patch | 20x - Hamamatsu Nanozoomer S210 | 2021
 UPENN-GBM [82] | glioblastoma | H&E | [data](https://www.cancerimagingarchive.net/collection/upenn-gbm/),[paper](https://www.nature.com/articles/s41597-022-01560-7) | 71 wsi from 34 patients | images + clinical data + mpMRI |  | WSI | 40x | 2022 
 VisioMel | Melanoma | H&E | [data](https://www.drivendata.org/competitions/148/visiomel-melanoma/page/717/), [code](https://drivendata.co/blog/visiomel-melanoma-benchmark) | train: 1342 wsi, test: 600, valid: 1200, 16 WSIs annotated | images + annotation + clinical metadata + label | classi (2) |  |  |2023
+WBCBench 2026 [105] | Blood | blood smear, standardised stain | [data](https://huggingface.co/datasets/Xin-Tian/wbcbench2026), [challenge](https://xudong-ma.github.io/WBCBench2026-Robust-White-Blood-Cell-Classification/), [paper](https://arxiv.org/abs/2604.10797) | 101,716 single-cell images from 493 patients (pristine + degraded copies; patient-level disjoint train/valid/test) | images + label (13 WBC classes) + degradation severity + patient hash | classi (13, severe class imbalance) + robustness to noise/blur/illumination shift | patch (single cell, ~368x368) | microscope, single site | 2026
 WSSS4LUAD [53] | Lung | H&E | [data](https://wsss4luad.grand-challenge.org/), [paper](https://arxiv.org/pdf/2204.06455.pdf) | 87 (Train: 53, valid: 12, Test: 12) | Train: 10.091 patches, Valid: 40 patches, Test: 80 patches; image level for train, pixel level for test/valid | tissue semantic seg | wsi | (67 GDPH, 20 TCGA) | 2021
 
 
@@ -374,6 +375,8 @@ pathology dataset and baseline models, 2025. https://doi.org/10.48550/arXiv.2503
 [103] Puchalski, Ralph B., et al. "An anatomic transcriptional atlas of human glioblastoma." *Science* 360.6389 (2018): 660-663.
 
 [104] Dmitry Nechaev, Alexey Pchelnikov, and Ekaterina Ivanova. HISTAI: An Open-Source, Large-Scale Whole Slide Image Dataset for Computational Pathology (2025)
+
+[105] Tian, Xin, Xudong Ma, Tianqi Yang, Alin Achim, Bartłomiej W. Papież, Phandee Watanaboonyongcharoen, and Nantheera Anantrasirichai. "WBCBench 2026: A Challenge for Robust White Blood Cell Classification Under Class Imbalance." IEEE International Symposium on Biomedical Imaging (ISBI) 2026. https://doi.org/10.48550/arXiv.2604.10797
 
 # Search
 - [Google Dataset Research](https://datasetsearch.research.google.com/search?src=0&query=histology&docid=L2cvMTFqbl8zcWY5ag%3D%3D)
